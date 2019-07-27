@@ -7,19 +7,18 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.7/fullpage.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
     <link rel='stylesheet' href='index.css'>
 </head>
 <body>
     <div class="fluid-container">
         <div class="container"></div>
-        <div class="container" id="mainTab">
+        <div class="fluid-container" id="mainTab">
             <!-- tab -->
             <ul class="nav nav-tabs" id="myTab" role="tablist">
                 <li class="nav-item"><a class="nav-link active tabAction" id="home-tab"
                 data-toggle="tab" href="#home" role="tab" aria-controls="home"
-                aria-selected="true">Home</a>
-                
-            </li>
+                aria-selected="true">Home</a></li>
                 <li class="nav-item"><a class="nav-link" id="about-tab" data-toggle="tab"
                 href="#about" role="tab" aria-controls="profile" aria-selected="false"
                 >About</a></li>
@@ -33,14 +32,27 @@
             <div class="tab-content px-sm-2" id="myTabContent">
                 <div class="tab-pane fade show active" id="home" role="tabpanel"
                 aria-labelledby="home-tab">
-                <div class='container' id="homeTab">
+                <div class='fluid-container' id="homeTab">
                     <h1 class="wow fadeIn" id="welcome">Wep Programmer 우승완의 개발 포트폴리오입니다.</h1>
+                    <div class="row wow fadeIn" data-wow-delay="0.2s">
+                        <div class="col">
+                            <img class="img-thumbnail" id="myFace" src="images/IMG_20190727_153324_535.jpg">
+                        </div>
+                        <div class="col" id="myInfo">
+                            <h3><i class="fas fa-user"></i> 1994.03.18 - 26세 (만 25세)</h3>
+                            <h3><i class="fas fa-user-graduate"></i> 2010.03 ~ 2013.02 - 양명고등학교 졸업</h3>
+                            <h3><i class="fas fa-user-graduate"></i> 2013.03 ~ 2019.02 - 한국산업기술대학교 졸업</h3>
+                            <h3><i class="fas fa-user-graduate"></i> 2018.12.28 ~ 2019.07.01 - 비트캠프 수료<br>(UI/UX엔지니어링 및 응용 SW엔지니어링 양성과정)</h3>
+                            <h3><i class="fas fa-certificate"></i> 정보처리기사 취득 예정(19.08.16)</h3>
+                        </div>
+                    </div>
                 </div>
             </div>
                 <div class="tab-pane fade" id="about" role="tabpanel"
                 aria-labelledby="about-tab"></div>
                 <div class="tab-pane fade" id="project" role="tabpanel" aria-labelledby="project-tab"></div>
-            </div> <!-- myTabContent -->
+            </div>
+             <!-- myTabContent -->
         </div>
     </div>
 
@@ -49,6 +61,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.7/fullpage.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/js/fontawesome.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
     <script src='index.js'></script>
 </body>

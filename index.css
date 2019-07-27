@@ -12,8 +12,28 @@ body {
 #homeTab {
     text-align: center;
     background-color: #f9f9f9;
+    padding: 10px;
 }
 
 #welcome {
+    padding: 50px 0px;
     color: black;
+}
+
+#myFace {
+    float: inherit;
+    width: 300px;
+}
+
+#myInfo {
+    text-align: left;
+    color: black;
+}
+
+#myInfo:first-child {
+    margin-bottom: 30px;
+}
+
+#myInfo > h3 {
+    margin: 0px 0px 30px 0px;
 }
