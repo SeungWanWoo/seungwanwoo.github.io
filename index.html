@@ -12,27 +12,14 @@
 </head>
 <body>
     <div class="fluid-container">
-        <div class="container"></div>
-        <div class="fluid-container" id="mainTab">
-            <!-- tab -->
-            <ul class="nav nav-tabs" id="myTab" role="tablist">
-                <li class="nav-item"><a class="nav-link active tabAction" id="home-tab"
-                data-toggle="tab" href="#home" role="tab" aria-controls="home"
-                aria-selected="true">Home</a></li>
-                <li class="nav-item"><a class="nav-link" id="about-tab" data-toggle="tab"
-                href="#about" role="tab" aria-controls="profile" aria-selected="false"
-                >About</a></li>
-                <li class="nav-item"><a class="nav-link" id="project-tab" data-toggle="tab"
-                href="#project" role="tab" aria-controls="project" aria-selected="false"
-                >Project</a></li>
-            </ul>
-            <!-- tab -->
-            
-            <!-- tab content -->
-            <div class="tab-content px-sm-2" id="myTabContent">
-                <div class="tab-pane fade show active" id="home" role="tabpanel"
-                aria-labelledby="home-tab">
-                <div class='fluid-container' id="homeTab">
+        <div class="fluid-container">
+            <div class="row" id="btnPos">
+                <button class="btn hover1">Home</button>
+                <button class="btn hover1">About</button>
+                <button class="btn hover1">Project</button>
+            </div>
+            <div class='fluid-container' id="homeTab">
+                <div class="noneInherit">
                     <h1 class="wow fadeIn" id="welcome">Wep Programmer 우승완의 개발 포트폴리오입니다.</h1>
                     <div class="row wow fadeIn" data-wow-delay="0.2s">
                         <div class="col">
@@ -48,11 +35,6 @@
                     </div>
                 </div>
             </div>
-                <div class="tab-pane fade" id="about" role="tabpanel"
-                aria-labelledby="about-tab"></div>
-                <div class="tab-pane fade" id="project" role="tabpanel" aria-labelledby="project-tab"></div>
-            </div>
-             <!-- myTabContent -->
         </div>
     </div>
 
