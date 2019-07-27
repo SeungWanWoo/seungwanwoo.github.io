@@ -11,37 +11,45 @@
     <link rel='stylesheet' href='index.css'>
 </head>
 <body>
-    <div class="fluid-container">
-        <div class="fluid-container">
-            <div class="row" id="btnPos">
-                <button class="btn hover1">Home</button>
-                <button class="btn hover1">About</button>
-                <button class="btn hover1">Project</button>
-            </div>
-            <div class='fluid-container' id="homeTab">
-                <div class="noneInherit">
-                    <h1 class="wow fadeIn" id="welcome">Wep Programmer 우승완의 개발 포트폴리오입니다.</h1>
-                    <div class="row wow fadeIn" data-wow-delay="0.2s">
-                        <div class="col">
-                            <img class="img-thumbnail" id="myFace" src="images/IMG_20190727_153324_535.jpg">
-                        </div>
-                        <div class="col" id="myInfo">
-                            <h3><i class="fas fa-user"></i> 1994.03.18 - 26세 (만 25세)</h3>
-                            <h3><i class="fas fa-user-graduate"></i> 2010.03 ~ 2013.02 - 양명고등학교 졸업</h3>
-                            <h3><i class="fas fa-user-graduate"></i> 2013.03 ~ 2019.02 - 한국산업기술대학교 졸업</h3>
-                            <h3><i class="fas fa-user-graduate"></i> 2018.12.28 ~ 2019.07.01 - 비트캠프 수료<br>(UI/UX엔지니어링 및 응용 SW엔지니어링 양성과정)</h3>
-                            <h3><i class="fas fa-certificate"></i> 정보처리기사 취득 예정(19.08.16)</h3>
-                        </div>
+    <div id="fullpage">
+        <ul id="menu">
+            <li data-menuanchor="firstPage" class="active"><a href="#firstPage">Home</a></li>
+            <li data-menuanchor="secondPage"><a href="#secondPage"></a>About</li>
+            <li data-menuanchor="thirdPage"><a href="#thirdPage"></a>Project</li>
+        </ul>
+        <div class='section fluid-container' id="section0">
+            <div class="container">
+                <h1 class="wow fadeIn" id="welcome">Wep Programmer 우승완의 개발 포트폴리오입니다.</h1>
+                <div class="row wow fadeIn" data-wow-delay="0.2s">
+                    <div class="col">
+                        <img class="img-thumbnail" id="myFace" src="images/IMG_20190727_153324_535.jpg">
+                    </div>
+                    <div class="col" id="myInfo">
+                        <h3><i class="fas fa-user"></i> 1994.03.18 - 26세 (만 25세)</h3>
+                        <h3><i class="fas fa-user-graduate"></i> 2010.03 ~ 2013.02 - 양명고등학교 졸업</h3>
+                        <h3><i class="fas fa-user-graduate"></i> 2013.03 ~ 2019.02 - 한국산업기술대학교 졸업</h3>
+                        <h3><i class="fas fa-user-graduate"></i> 2018.12.28 ~ 2019.07.01 - 비트캠프 수료<br>(UI/UX엔지니어링 및 응용 SW엔지니어링 양성과정)</h3>
+                        <h3><i class="fas fa-certificate"></i> 정보처리기사 취득 예정(19.08.16)</h3>
                     </div>
                 </div>
             </div>
         </div>
+
+        <div class='section fluid-container' id="section1">
+            <h1>두번째 페이지입니다.</h1>
+        </div>
+
+        <div class='section fluid-container' id="section2">
+            <h1>세번째 페이지입니다</h1>
+        </div>
     </div>
 
     
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.7/vendors/easings.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.7/vendors/scrolloverflow.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.7/fullpage.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/js/fontawesome.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>

@@ -1,11 +1,24 @@
 body {
+    position: relative;
     background-color: white;
     background-image: url(images/code-2620118_1920.jpg);
 }
 
+/* ----------------------------------------------- */
 
+#menu {
+    position: fixed;
+    list-style: none;
+    top:0;
+    left:0;
+    height: 40px;
+    z-index: 70;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
 
-.btn {
+#menu li {
     display:block;
     width:200px;
     height:60px;
@@ -17,31 +30,17 @@ body {
     cursor: pointer;
     color:white;
     transition:all 0.9s, color 0.3;
- }
- 
- .btn:hover{
-     color:white;
 }
 
-.hover1:hover{ 
+#menu li:hover {
+    color:white;
     box-shadow: 200px 0 0 0 rgba(0,0,0,0.25) inset, 
                 -200px 0 0 0 rgba(0,0,0,0.25) inset;
- }
-
-#btnPos {
-    align-content: right;
-    background-color: #626262;
 }
 
-#homeTab {
-    text-align: center;
-    background-color: #f9f9f9;
-    opacity: 0.5 !important;
-    padding: 10px;
-}
-
-.noneInherit {
-    opacity: 1.0;
+/* ----------------------------------------------- */
+#section0 {
+    background-color: white;
 }
 
 #welcome {
@@ -50,17 +49,12 @@ body {
 }
 
 #myFace {
-    float: inherit;
     width: 300px;
 }
 
 #myInfo {
     text-align: left;
     color: black;
-}
-
-#myInfo:first-child {
-    margin-bottom: 30px;
 }
 
 #myInfo > h3 {
