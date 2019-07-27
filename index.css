@@ -1,0 +1,19 @@
+body {
+    background-color: gray;
+
+}
+
+#mainTab {
+    text-align: right;
+    background-color: black;
+    opacity: 0.5;
+}
+
+#homeTab {
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+#welcome {
+    color: black;
+}
