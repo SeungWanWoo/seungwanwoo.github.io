@@ -5,7 +5,10 @@ $(document.body).ready(() => {
         licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE',
         anchors: ['firstPage', 'secondPage', 'thirdPage'],
         continuousVertical: true,
-        menu: '#myMenu',
+        navigation: true,
+        navigationPosition: 'right',
+        navigationTooltips: ['Home', 'About', 'Project'],
+        responsiveWidth: 1100,
         afterLoad: function(anchorLink, index) {
         },
         onLeave: function(origin, destination, direction) {
