@@ -9,6 +9,7 @@ $(document.body).ready(() => {
         navigationPosition: 'right',
         navigationTooltips: ['Home', 'About', 'Project'],
         responsiveWidth: 1100,
+        scrollOverflow: true,
         afterLoad: function(anchorLink, index) {
         },
         onLeave: function(origin, destination, direction) {
