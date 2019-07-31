@@ -1,6 +1,5 @@
 $(document.body).ready(() => {
     new WOW().init();
-
     var myFullpage = new fullpage('#fullpage', {
         licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE',
         anchors: ['firstPage', 'secondPage', 'thirdPage'],
