@@ -85,9 +85,9 @@ strong {
     background-color: rgba(255, 255, 255, 1.0);
 }
 
-#aboutInfo, #skillLang{
+#aboutInfo, #skillLang, #skillWeb{
     margin: auto;
-    font-size: 4.0em;
+    font-size: 3.0em;
 }
 
 #sideBar {
@@ -102,21 +102,56 @@ strong {
     text-align: left;
 }
 
-#imgLang > .rounded > img {
-    margin: auto;
-    width: 100px;
-    height: 100px;
-}
-
-.rounded {
-    background-color: #f5f5f5;
-    height: 110px;
-    width: 110px;
+.thumbnailContainer {
+    margin: auto 20px;
+    padding: 10px;
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
     border-radius: 10px;
-    border-right: 5px gray;
-    border-bottom: 5px gray;
 }
 
+.thumbnailContainer > img {
+    display: block;
+    width: 200px;
+    height: 200px;
+}
+
+.overlayRotate {
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    transform: rotate(90deg);
+    background: #1e1e1e;
+}
+
+.overlay {
+    position: absolute;
+    transition: all .3s ease;
+    opacity: 0;
+    background: black;
+}
+
+.text {
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2.0em;
+    border: 1px solid white;
+    padding: 50%;
+    border-radius: 5px;
+}
+
+.thumbnailContainer:hover .overlay {
+    opacity: .6;
+}
+
+.thumbnailContainer:hover .overlayRotate {
+    transform: rotate(0deg);
+}
 /* ----------------------------------------------- */
 
 #section2 {
