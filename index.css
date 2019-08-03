@@ -14,6 +14,10 @@ strong {
     font-size: 2.0em;
 }
 
+#section0, #section1, #section2 {
+    min-height: 100vh;
+}
+
 /* ----------------------------------------------- */
 
 #menu li{
@@ -55,7 +59,8 @@ strong {
 
 /* ----------------------------------------------- */
 #section0 {
-    background-color: white;
+    top: 50%;
+    left: 50%;
     text-align: center;
     background-color: rgba(255, 255, 255, 0.7);
 }
@@ -65,12 +70,8 @@ strong {
     color: black;
 }
 
-#myFace {
-    width: 300px;
-}
-
 #myInfo {
-    text-align: left;
+    text-align: center;
     color: black;
 }
 
