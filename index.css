@@ -174,15 +174,38 @@ strong {
     background-color: rgba(255, 255, 255, 0.9);
 }
 
-#bitcamp-project {
-    background-color: #d3d3d3;
-    height: 500px;
-}
-
 .card {
+    margin: 20px;
     min-height: 500px;
     max-height: 500px;
     min-width: 350px;
     max-width: 350px;
     overflow: hidden;
+}
+
+#card-container:hover .overlay {
+    opacity: .6;
+}
+
+#card-container:hover .overlayRotate {
+    transform: rotate(0deg);
+}
+
+.textCard {
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2.0em;
+    padding: 50%;
+}
+
+#moreOhora, #moreCaps {
+    color: white;
+    position: absolute;
+    top:60%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.0em;
 }
