@@ -14,7 +14,7 @@ strong {
     font-size: 2.0em;
 }
 
-#section0, #section1, #section2 {
+#firstPage, #secondPage, #thirdPage {
     min-height: 100vh;
 }
 
@@ -58,7 +58,7 @@ strong {
 }
 
 /* ----------------------------------------------- */
-#section0 {
+#firstPage {
     top: 50%;
     left: 50%;
     text-align: center;
@@ -81,7 +81,7 @@ strong {
 
 /* ----------------------------------------------- */
 
-#section1 {
+#secondPage {
     padding-top: 60px;
     background-color: #f5f5f5;
     text-align: center;
@@ -148,6 +148,16 @@ strong {
     border-radius: 5px;
 }
 
+#moreButton {
+    color: white;
+    position: absolute;
+    top:70%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.0em;
+    padding: 50%;
+}
+
 .thumbnailContainer:hover .overlay {
     opacity: .6;
 }
@@ -157,7 +167,8 @@ strong {
 }
 /* ----------------------------------------------- */
 
-#section2 {
+#thirdPage {
+    padding-top: 80px;
     background-color: #f2f2f2;
     text-align: center;
     background-color: rgba(255, 255, 255, 0.9);
@@ -166,4 +177,12 @@ strong {
 #bitcamp-project {
     background-color: #d3d3d3;
     height: 500px;
+}
+
+.card {
+    min-height: 500px;
+    max-height: 500px;
+    min-width: 350px;
+    max-width: 350px;
+    overflow: hidden;
 }

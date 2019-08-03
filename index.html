@@ -15,14 +15,11 @@
 
 <body>
     <ul id="menu">
-        <li data-menuanchor="firstPage" class="active btn"><a href="#firstPage"><i class="fas fa-home"></i> Home</a>
-        </li>
-        <li data-menuanchor="secondPage" class="btn"><a href="#secondPage"><i class="fas fa-info-circle"></i> About
-                Me</a></li>
-        <li data-menuanchor="thirdPage" class="btn"><a href="#thirdPage"><i class="fab fa-github-alt"></i> Project</a>
-        </li>
+            <li data-target="#firstPage" class="btn"><i class="fas fa-home"></i> Home</li>
+            <li data-target="#secondPage" class="btn"><i class="fas fa-info-circle"></i> About Me</li>
+            <li data-target="#thirdPage" class="btn"><i class="fab fa-github-alt"></i> Project</li>
     </ul>
-    <div class='fluid-container' id="section0">
+    <div class='fluid-container' id="firstPage">
         <h1 class="wow fadeInDown" data-wow-delay="0.5s" data-wow-duration="0.5s" id="welcome">
             Wep Programmer 우승완의 개발 포트폴리오입니다.
         </h1>
@@ -38,7 +35,7 @@
         </div>
     </div>
 
-    <div class='fluid-container' id="section1">
+    <div class='fluid-container' id="secondPage">
         <div class="wow fadeInDown" data-wow-delay="0.2s" data-wow-offset="80" id="welcome2">
             <h1>최고의 PM을 꿈꾸는 프로그래머입니다.</h1>
         </div>
@@ -79,20 +76,26 @@
             <div id="sideBar"></div>
             <div class="col" id="imgLang">
                 <div class="row imgLangImages">
-                    <div class="thumbnailContainer">
+                    <div class="thumbnailContainer wow fadeInDown" data-wow-delay="1.1s" data-wow-offset="60">
                         <img src="images/java.png">
                         <div class="overlay overlayRotate">
                             <div class="text">intermediate</div>
+                            <a class="btn" id="moreButton" href="https://github.com/SeungWanWoo/bitcamp-java-2018-12/tree/master/java-basic">
+                                <i class="fab fa-github"></i>more
+                            </a> 
                         </div>
                     </div>
 
-                    <div class="thumbnailContainer">
+                    <div class="thumbnailContainer wow fadeInDown" data-wow-delay="1.15s" data-wow-offset="60">
                         <img src="images/javascript.png">
                         <div class="overlay overlayRotate">
                             <div class="text">intermediate</div>
+                            <a class="btn" id="moreButton" href="https://github.com/SeungWanWoo/bitcamp-java-2018-12/tree/master/java-web/src/main/webapp/javascript">
+                                <i class="fab fa-github"></i>more
+                            </a>
                         </div>
                     </div>
-                    <div class="thumbnailContainer">
+                    <div class="thumbnailContainer wow fadeInDown" data-wow-delay="1.2s" data-wow-offset="60">
                         <img src="images/c++.png">
                         <div class="overlay overlayRotate">
                             <div class="text">beginner</div>
@@ -208,16 +211,40 @@
         </div>
     </div>
 
-    <div class='section fluid-container' id="section2">
+    <div class='fluid-container' id="thirdPage">
         <h1>Project</h1>
         <hr>
-        <div class="container" id="bitcamp-project">
+        <div class="container">
+            <div class="card-columns">
+                <div class="card">
+                    <img src="images/project1-main.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                    <h5 class="card-title">Ohora 프로젝트</h5>
+                    <p class="card-text">
+                        매뉴얼 전문 사이트 오호라 사이트입니다. 일반적으로 제품들에 대해서 배급되는 기본 제품 사용설명서들은
+                         보통 보기 어렵고 이해하기가 쉽지 않습니다. 그래서 자신이 구입한 제품에 대해서 보다 쉽게 사용법을 배
+                         우거나 자신만이 가지고 있는 제품에 대한 노하우를 공유하는 홈페이지를 만들게 되었습니다.
+                    </p>
+                    <button class="btn btn-secondary" id="moreOhora">more</button>
+                    </div>
+                </div>
 
+                <div class="card">
+                        <img src="images/graduated2.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                        <h5 class="card-title">캡스톤 디자인 프로젝트</h5>
+                        <p class="card-text">
+                            ...
+                        </p>
+                        <button class="btn btn-secondary" id="moreCaps">more</button>
+                        </div>
+                    </div>
+            </div>
         </div>
     </div>
 
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.7/vendors/easings.js"></script>
@@ -227,5 +254,4 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
     <script src='index.js'></script>
 </body>
-
 </html>
