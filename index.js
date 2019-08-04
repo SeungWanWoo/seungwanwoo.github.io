@@ -1,11 +1,31 @@
 $(document.body).ready(() => {
     new WOW().init();
 
-    $("#menu li").click(function() {
-        var offset = $($(this).attr('data-target')).offset();
-        $("html, body").animate({
-              scrollTop: offset.top
-        }, 1000);
+    // $("#menu li").click(function() {
+    //     var offset = $($(this).attr('data-target')).offset();
+    //     $("html, body").animate({
+    //           scrollTop: offset.top
+    //     }, 1000);
+    // });
+
+    $('#fullpage').fullpage({
+        licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE',
+        anchors: ['firstPage', 'secondPage', 'thirdPage'],
+        menu: '#menu',
+        navigation: true,
+        navigationPosition: 'right',
+        navigationTooltips: ['Who am i?', 'About me', 'My project'],
+        scrollingSpeed: 1000,
+        autoScrolling: true,
+        fadingEffect: true,
+        scrollOverflow: true,
+        scrollOverflowReset: true,
+        afterLoad: function(origin, destination, direction) {
+
+        },
+        onLeave: function(origin, destination, direction) {
+
+        }
     });
 });
 
