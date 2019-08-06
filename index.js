@@ -32,5 +32,15 @@ $(document.body).ready(() => {
 $('#moreOhora').click((e) => {
     e.preventDefault();
     location.href = "ohora.html";
+});
+
+$('#moreCaps').click((e) => {
+    e.preventDefault();
+    location.href = "ddockdi.html";
+});
+
+$('#moreEtc').click((e) => {
+    e.preventDefault();
+    location.href = "etc.html";
 })
 
