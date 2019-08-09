@@ -56,27 +56,44 @@ strong {
                 -200px 0 0 0 rgba(0,0,0,0.25) inset;
 }
 
-/* ----------------------------------------------- */
-#section0 {
-    padding-top: 10%;
-    text-align: center;
-    background-color: rgba(255, 255, 255, 0.7);
+#menu li ul {
+    display: none;
+    color: white;
+    padding: 0;
+    margin: 0;
+    transition:all 0.9s, color 0.3;
+    z-index: 200;
+    opacity: 0.9;
 }
 
-#welcome {
-    padding: 50px 0px;
-    color: black;
+#menu li:hover ul{
+    position: absolute;
+    display: block;
+    transition: all 0.9s, color 0.3;
+}
+
+#menu li:hover ul li:hover {
+    color:white;
+    box-shadow: 200px 0 0 0 rgba(0,0,0,0.25) inset, 
+                -200px 0 0 0 rgba(0,0,0,0.25) inset;
+}
+/* ----------------------------------------------- */
+#section0 {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.9);
 }
 
 #myInfo {
-    
-    margin: 0 30%;
+    margin-left: 50%;
     text-align: left;
-    color: black;
+    color: white;
+    font-style: bold;
 }
 
-#myInfo > h3 {
-    margin: 0px 0px 30px 0px;
+.bg-crousel2 {
+    margin: 0;
+    margin-bottom: 10%;
+    text-align: right;
 }
 
 /* ----------------------------------------------- */

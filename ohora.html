@@ -5,8 +5,7 @@
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>PortPolio</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
     <link rel='stylesheet' href='index.css'>
@@ -14,12 +13,18 @@
 </head>
 
 <body>
-    <ul id="menu">
-        <li class="active btn"><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
-        <li class="btn"><a href="#secondPage"><i class="fas fa-info-circle"></i> About Me</a></li>
-        <li class="btn"><a href="#thirdPage"><i class="fab fa-github-alt"></i> Project</a>
-        </li>
-    </ul>
+    <div class="row">
+        <ul id="menu">
+            <li class="active btn"><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+            <li class="btn"><a href="#secondPage"><i class="fas fa-info-circle"></i> About Me</a></li>
+            <li class="btn"><a href="#thirdPage"><i class="fab fa-github-alt"></i> Project</a>
+                <ul>
+                    <li calss="btn btn-sm btn-outline-secondary"><a href="ohora.html">오호라</a></li>
+                    <li calss="btn btn-sm btn-outline-secondary"><a href="ddockdi.html">똑디창문</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
     <div class="fluid-container">
         <div class="container" id="title">
             <div class="row">
