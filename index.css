@@ -83,6 +83,13 @@ strong {
     background-color: rgba(0, 0, 0, 0.9);
 }
 
+#welcome2 {
+    margin: 50px 0;
+    font-size: 4em;
+    color: #000000;
+    text-shadow: 2px 2px 2px gray;
+}
+
 #myInfo {
     margin-left: 50%;
     text-align: left;
@@ -193,10 +200,10 @@ strong {
 
 .card {
     margin: 20px;
-    min-height: 500px;
-    max-height: 500px;
-    min-width: 350px;
-    max-width: 350px;
+    min-height: 50vh;
+    max-height: 50vh;
+    min-width: 20vw;
+    max-width: 20vw;
     overflow: hidden;
 }
 
@@ -218,10 +225,19 @@ strong {
     padding: 50%;
 }
 
-#moreOhora, #moreCaps, #moreEtc {
+#moreOhora, #moreCaps, #moreEtc, .gitaddr {
     color: white;
     position: absolute;
     top:60%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.0em;
+}
+
+.gmailaddr {
+    color: white;
+    position: absolute;
+    top:70%;
     left:50%;
     transform: translate(-50%, -50%);
     font-size: 1.0em;
