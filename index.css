@@ -225,7 +225,7 @@ strong {
     padding: 50%;
 }
 
-#moreOhora, #moreCaps, #moreEtc, .gitaddr {
+#moreOhora, #moreCaps, #moreEtc {
     color: white;
     position: absolute;
     top:60%;
@@ -234,11 +234,13 @@ strong {
     font-size: 1.0em;
 }
 
-.gmailaddr {
-    color: white;
-    position: absolute;
-    top:70%;
-    left:50%;
-    transform: translate(-50%, -50%);
-    font-size: 1.0em;
+/*===========================================================================*/
+
+#section3 {
+    background-image: url('images/futureLoad.jpg');
+    text-align: center;
+}
+
+#section3 p, #section3 a {
+    font-size: 1.5em;
 }

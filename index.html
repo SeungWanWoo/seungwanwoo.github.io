@@ -18,6 +18,7 @@
         <li data-menuanchor="#firstPage" class="btn active"><a href="#firstPage"><i class="fas fa-home"></i> Home</a></li>
         <li data-menuanchor="#secondPage" class="btn"><a href="#secondPage"><i class="fas fa-info-circle"></i> About Me</a></li>
         <li data-menuanchor="#thirdPage" class="btn"><a href="#thirdPage"><i class="fab fa-github-alt"></i> Project</a></li>
+        <li data-menuanchor="#forthPage" class="btn"><a href="#forthPage"><i class="fas fa-location-arrow"></i> Next..</a></li>
     </ul>
     <div id="fullpage">
         <div class="section active fluid-container" id="section0">
@@ -263,7 +264,7 @@
         </div>
 
         <div class='section fluid-container' id="section2">
-            <h1>Project</h1>
+            <p id="welcome2">Project</p>
             <hr>
             <div class="fluid-container">
                 <div class="card-columns">
@@ -292,7 +293,7 @@
                                 시스템과 창문을 열고 집을 비웠는데 갑작스러운 우천 시 자동으로 닫혀지는 창문입니다.
                             </p>
                             <div class="overlay overlayRotate">
-                                <p class="textCard">Incomplete</p>
+                                <p class="textCard">Proceeding</p>
                                 <button class="btn btn-outline-secondary" id="moreCaps">more</button>
                             </div>
                         </div>
@@ -306,26 +307,23 @@
                                 부족하지만 귀엽게 봐주셨으면 좋겠습니다.
                             </p>
                             <div class="overlay overlayRotate">
-                                <p class="textCard">Continue...</p>
+                                <p class="textCard">Proceeding</p>
                                 <button class="btn btn-outline-secondary" id="moreCaps">more</button>
                             </div>
                         </div>
                     </div>
-                    <div class="card" id="card-container">
-                        <img src="images/default.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title"> 다음 프로젝트는...</h5>
-                            <p class="card-text">
-                                앞으로의 프로젝트는 여러분의 회사에 입사 후에 추가하겠습니다.
-                            </p>
-                            <div class="overlay overlayRotate">
-                                <p class="textCard">Continue!</p>
-                                <a class="gitaddr" href="https://github.com/SeungWanWoo"><i class="fab fa-github"></i>https://github.com/SeungWanWoo</a>
-                                <p class="gmailaddr"><i class="fas fa-mail-bulk"></i>seungwan.woo94@gmail.com</p>
-                            </div>
-                        </div>
-                    </div>
                 </div>
+            </div>
+        </div>
+        <div class='section fluid-container' id="section3">
+            <div class="fluid-container">
+            <h1>다음 프로젝트는...</h1>
+                <p>앞으로의 프로젝트는 여러분의 회사에 입사 후에 추가하겠습니다.</p>
+                <a class="gitaddr" href="https://github.com/SeungWanWoo"><i class="fab fa-github"></i>  https://github.com/SeungWanWoo</a>
+                <br>
+                <a class="naveraddr" href="https://blog.naver.com/tmddhks0707"><i class="fas fa-blog"></i> https://blog.naver.com/tmddhks0707</a>
+                <br>
+                <a class="gmailaddr" href="#"><i class="fas fa-mail-bulk"></i>  seungwan.woo94@gmail.com</a>
             </div>
         </div>
     </div>
@@ -333,10 +331,11 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.7/vendors/easings.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.7/vendors/scrolloverflow.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.7/vendors/scrolloverflow.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.7/fullpage.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/js/fontawesome.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
     <script src='index.js'></script>
 </body>
 </html>
