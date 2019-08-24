@@ -8,42 +8,60 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
-    <link rel='stylesheet' href='index.css'>
     <link rel='stylesheet' href='ohora.css'>
+    <link rel="stylesheet" href="menu.css">
 </head>
 
 <body>
-    <div class="row">
-        <ul id="menu">
-            <li class="active btn"><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
-            <li class="btn"><a href="#secondPage"><i class="fas fa-info-circle"></i> About Me</a></li>
-            <li class="btn"><a href="#thirdPage"><i class="fab fa-github-alt"></i> Project</a>
-                <ul>
-                    <li calss="btn btn-sm btn-outline-secondary"><a href="ohora.html">오호라</a></li>
-                    <li calss="btn btn-sm btn-outline-secondary"><a href="ddockdi.html">똑디창문</a></li>
-                </ul>
-            </li>
-        </ul>
-    </div>
-    <div class="fluid-container">
-        <div class="container" id="title">
-            <div class="row">
-                <div class="col" id="titleImg">
-                    <img class="img-thumbnail" src="images/project1-main.png">
-                </div>
-                <div id="sideBar"></div>
-                <div class="col" id="titleInfo">
-                    <h1>제품 사용 설명서의 혁신! 오호라 매뉴얼 사이트입니다.</h1>
+    <ul id="menu">
+        <li class="active btn"><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+        <li class="btn"><a href="#"><i class="fab fa-github-alt"></i> Project</a>
+            <ul>
+                <li calss="btn btn-sm btn-outline-secondary"><a href="ohora.html">오호라</a></li>
+                <li calss="btn btn-sm btn-outline-secondary"><a href="ddockdi.html">똑디창문</a></li>
+            </ul>
+        </li>
+    </ul>
+    <div id="fullpage">
+        <div class="section active fluid-container" id="section0">
+            <div class="fluid-container" id="title">
+                <div class="row">
+                    <div class="col-sm-5" id="titleImg">
+                        <img class="img-thumbnail" src="images/project1-main.png">
+                    </div>
+                    <div class="col-sm-5" id="titleInfo">
+                        <p class="main">제품 사용 설명서의 혁신!<br><strong>오호라 매뉴얼 사이트</strong>입니다.</p>
+                        <hr>
+                        <a href="#" class="glink"><i class="fab fa-github"></i>  https://github.com/SeungWanWoo/bitcamp-team-project</a>
+                        <hr>
+                        <pre>
+  오호라 매뉴얼 전문 사이트는 사용자들이 제품을 구입한 후 겪는 사용방법,
+사용설명서에 대한 문제점을 해결하기 위해 고안된 하나의 웹 정보 공유
+사이트입니다. 사용자 입장에서 겪는 제품에 대한 설명 부족, 불필요한 내용과
+너무 글만 있다는 점, 그리고 사용자들이 원하는 내용이 없다는 점과 그 제품을
+내놓는 회사 입장에서의 고객 요구사항에 대해 접근이 어렵다는 불편사항을 개선
+하고자하는 생각에서 프로젝트를 시작하였습니다.
+                   
+  설명이 부족한 점은 영상과 사진을 추가하여 단순한 글로서 보기 힘든 부분을 해결하였고,
+불필요하거나 없는 내용은 보기 쉬운 UI와 회사에서 만든 pdf 파일을 봄으로써 알 수 
+있도록 해결하였습니다. 고객의 요구사항에 대한 접근이 어려운 점은 사용자들의 리뷰와 
+한줄평으로 회사에서 요구사항을 쉽게 수용이 가능하게 하여 해결하였습니다. 또한 회사에서
+매뉴얼을 사용자가 보기 쉽게 올릴 수 있도록 등록을 쉽게하여 추가 인력에 대한 문제점도 
+해결하였습니다.
+                        </pre>
+                    </div>
                 </div>
             </div>
+            <hr>
+            <p class="use2skill">사용 기술</p>
+            <hr>
         </div>
-        <hr>
     </div>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/js/fontawesome.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
-    <script src='index.js'></script>
+    <script src="ohora.js"></script>
 </body>
 </html>
