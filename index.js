@@ -4,8 +4,6 @@ $(document.body).ready(() => {
         licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE',
         anchors: ['firstPage', 'secondPage', 'thirdPage', 'forthPage'],
         menu: '#menu',
-        navigation: true,
-        navigationPosition: 'right',
         navigationTooltips: ['Who am i?', 'About me', 'My project', 'And next...'],
         scrollingSpeed: 1000,
         autoScrolling: true,
