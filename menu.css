@@ -1,18 +1,17 @@
 /* ----------------------------------------------- */
 /* 링크 글자 폰트 색 */
-a {
+/* a {
     text-decoration: none;
-    text-align: center;
     color: white;
 }
 
 a:hover {
     text-decoration: none;
     color: gray;
-}
+} */
 
 /* 리스트 스타일 */
-#menu {
+/* #menu {
     position: fixed;
     top:0;
     left: 0;
@@ -41,8 +40,7 @@ a:hover {
     display:block;
     width:200px;
     height:60px;
-    line-height:40px;
-    border:1px #626466 solid;
+    line-height:55px;
     background-color:#626466;
     text-align:center;
     font-size: 1.3rem;
@@ -57,20 +55,83 @@ a:hover {
                 -200px 0 0 0 rgba(0,0,0,0.25) inset;
 }
 
-/*세로 매뉴*/
+/*세로 매뉴
 #menu li ul {
     position: absolute;
-    display: none;
+    /* display: none; 
     color: white;
     padding: 0;
     margin: 0;
     height:auto;
-    border: 0;
+    border: none;
+    border-radius: .25rem;
     width:200px;
     z-index: 200;
+    transition:all 0.9s, color 0.3;
 }
 
 #menu li:hover ul{
     display: block;
+    box-shadow: 200px 0 0 0 rgba(0,0,0,0.25) inset, 
+                -200px 0 0 0 rgba(0,0,0,0.25) inset;
+} */
+
+#topmenu {
+    height: 45px;
+    width: 100%;
+    background-color: #626466;
+    z-index: 70;
+    position: fixed;
 }
 
+#menu {
+    position: inherit;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    z-index: 70;
+}
+
+#menu li {
+    background-color: #626466;
+    float: left;
+    line-height: 30px;
+    vertical-align: middle;
+    text-align: center;
+    position: relative;
+}
+
+#menu a {
+    color: white;
+    text-decoration:none;
+    display: block;
+    width: 150px;
+    font-size: 1.2em;
+    transition:all 0.9s, color 0.3;
+}
+
+#menu li:hover {
+    color: grey;
+    text-decoration: none;
+    box-shadow: 150px 0 0 0 rgba(0,0,0,0.25) inset, 
+                -150px 0 0 0 rgba(0,0,0,0.25) inset;
+}
+
+.submenu {
+    position: absolute;
+    height: 0px;
+    overflow: hidden;
+    transition: height .2s;
+    -webkit-transition: height .2s;
+    -moz-transition: height .2s;
+    -o-transition: height .2s;
+    width: 574px; /* [변경] 가로 드랍다운 메뉴의 넓이 */
+}
+
+.submenu li {
+    display: inline-block;
+}
+
+#menu a:hover .submenu {
+    height: 32px;
+}

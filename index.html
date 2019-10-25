@@ -7,75 +7,49 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.7/fullpage.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
-    <link rel="stylesheet" href="http://fonts.googleapis.com/earlyaccess/hanna.css">
-    <link rel="stylesheet" href="http://fonts.googleapis.com/earlyaccess/jejugothic.css">
+    <link href="https://fonts.googleapis.com/css?family=Do+Hyeon|Jua&display=swap&subset=korean" rel="stylesheet">
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="menu.css">
 </head>
 
 <body>
-    <ul id="menu">
-        <li data-menuanchor="#firstPage" class="btn active"><a href="#firstPage"><i class="fas fa-home"></i> Home</a></li>
-        <li data-menuanchor="#secondPage" class="btn"><a href="#secondPage"><i class="fas fa-info-circle"></i> About Me</a></li>
-        <li data-menuanchor="#thirdPage" class="btn"><a href="#thirdPage"><i class="fab fa-github-alt"></i> Project</a></li>
-        <li data-menuanchor="#forthPage" class="btn"><a href="#forthPage"><i class="fas fa-location-arrow"></i> Next..</a></li>
-    </ul>
+    <nav id="topmenu">
+        <ul id="menu">
+            <li data-menuanchor="#firstPage" class="btn active menulink"><a href="#firstPage"><i class="fas fa-home"></i> Home</a></li>
+            <li data-menuanchor="#secondPage" class="btn menulink"><a href="#secondPage"><i class="fas fa-info-circle"></i> About Me</a></li>
+            <li data-menuanchor="#thirdPage" class="btn menulink"><a href="#thirdPage"><i class="fab fa-github-alt"></i> Project</a></li>
+            <li data-menuanchor="#forthPage" class="btn menulink"><a href="#forthPage"><i class="fas fa-location-arrow"></i> Next..</a></li>
+        </ul>
+    </nav>
     <div id="fullpage">
         <div class="section active fluid-container" id="section0">
-            <div class="bd-example">
-                <div id="myIntro" class="carousel slide" data-ride="carousel">
-                    <ol class="carousel-indicators">
-                        <li data-target="#myIntro" data-slide-to="0" class="active"></li>
-                        <li data-target="#myIntro" data-slide-to="1"></li>
-                    </ol>
-
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img id="bg-carousel1" src="images/code-2620118_1920.jpg" style="opacity: 0.5; height: 100vh; width: 100vw;">
-                            <div class="fluid-container">
-                                <div class="carousel-caption text-right">
-                                    <div class="fluid-container bg-crousel2">
-                                        <h1 class="wow fadeInDown">Wep Programmer 우승완의 개발 포트폴리오입니다.</h1>
-                                        <div class="row wow fadeInDown" data-wow-delay="0.7s" id="my">
-                                            <div class="col" id="myInfo">
-                                                <h4><i class="fas fa-user"></i> 1994.03.18 - 26세 (만 25세)</h4>
-                                                <h4><i class="fas fa-user-graduate"></i> 2010.03 ~ 2013.02 - 양명고등학교 졸업</h4>
-                                                <h4><i class="fas fa-user-graduate"></i> 2013.03 ~ 2019.02 - 한국산업기술대학교 졸업</h4>
-                                                <h4><i class="fas fa-user-graduate"></i> 2018.12.28 ~ 2019.07.01 - 비트캠프 수료<br>(UI/UX엔지니어링 및 응용 SW엔지니어링
-                                                    양성과정)</h3>
-                                                <h4><i class="fas fa-certificate"></i> 정보처리기사 취득(19.08.16)</h4>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <div class="fluid-container">
-                                <img src="images/project1-main.png" style="opacity: 0.5; height: 100vh; width: 100vw;">
-                                <div class="carousel-caption text-right">
-                                    <div class="fluid-container bg-crousel2 wow fadeInDown">
-                                        <h1>오호라 프로젝트</h1>
-                                        <h4><i class="far fa-calender-alt"></i>2019.04 ~ 2019.07</h4>
-                                    </div>
-                                </div>
-                            </div>
+            <div id="introduce">
+                <div class="fluid-container">
+                    <h1 class="animated fadeInDown welcome1">Wep Programmer 우승완의 개발 포트폴리오입니다.</h1>
+                    <div class="row animated fadeInDown" id="my">
+                        <div class="col" id="myInfo">
+                            <h4><i class="fas fa-user"></i> 1994.03.18 남</h4>
+                            <h4><i class="fas fa-user-graduate"></i> 2010.03 ~ 2013.02 - 양명고등학교 졸업</h4>
+                            <h4><i class="fas fa-user-graduate"></i> 2013.03 ~ 2019.02 - 한국산업기술대학교 졸업</h4>
+                            <h4><i class="fas fa-user-graduate"></i> 2018.12.28 ~ 2019.07.01 - 비트캠프 수료<br>(UI/UX엔지니어링 및 응용 SW엔지니어링
+                                양성과정)</h3>
+                            <h4><i class="fas fa-certificate"></i> 정보처리기사 취득(19.08.16)</h4>
                         </div>
                     </div>
-                    <a class="carousel-control-prev" href="#myIntro" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                    </a>
-                    <a class="carousel-control-next" href="#myIntro" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                    </a>
                 </div>
+                <a class="scroll-link" href="#content" style="cursor: default;">
+                    <svg class="mouse" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 76 130" preserveAspectRatio="xMidYMid meet">
+                        <g fill="none" fill-rule="evenodd">
+                            <rect width="70" height="118" x="1.5" y="1.5" stroke="#FFF" stroke-width="3" rx="36"/>
+                            <circle class="scroll" cx="36.5" cy="31.5" r="4.5" fill="#FFF"/>
+                        </g>
+                    </svg>
+                </a>
             </div>
         </div>
 
         <div class='section fluid-container' id="section1">
-            <div id="welcome2">
+            <div class="animated fadeInDown delay-0.8s" id="welcome2">
                 <p>고객 입장에서는 친근한 개발자가 되겠습니다.</p>
             </div>
             <hr>
@@ -294,7 +268,7 @@
             <div class="fluid-container">
                 <div class="slide" id="slide1">
                 <h1 class="aspiration">빠르고 정밀한 개발자가 되겠습니다.</h1>
-                    <div class="container">
+                    <div class="container animated fadeIn">
                         <div class="row">
                             <div class="col purpose">
                                 <img src="images/purpose.jpg">
@@ -339,7 +313,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.7/vendors/scrolloverflow.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.7/fullpage.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/js/fontawesome.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
     <script src='index.js'></script>
 </body>

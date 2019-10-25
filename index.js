@@ -1,5 +1,4 @@
 $(document.body).ready(() => {
-    new WOW().init();
     $('#fullpage').fullpage({
         licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE',
         anchors: ['firstPage', 'secondPage', 'thirdPage', 'forthPage'],
@@ -15,6 +14,7 @@ $(document.body).ready(() => {
 
         }
     });
+
 });
 
 function copyToClipboard(val) {
@@ -34,14 +34,4 @@ $('#moreOhora').click((e) => {
     e.preventDefault();
     location.href = "ohora.html";
 });
-
-$('#moreCaps').click((e) => {
-    e.preventDefault();
-    location.href = "ddockdi.html";
-});
-
-$('#moreEtc').click((e) => {
-    e.preventDefault();
-    location.href = "etc.html";
-})
 
