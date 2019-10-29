@@ -52,7 +52,7 @@ strong {
     font-size: 4em;
     color: #000000;
     text-shadow: 2px 2px 2px gray;
-    font-family: "Do Hyeon", sans-serif;
+    font-family: 'Do Hyeon', sans-serif;
 }
 
 #aboutInfo, #skillLang, #skillWeb, #framework, #database, #shapeMgn {
