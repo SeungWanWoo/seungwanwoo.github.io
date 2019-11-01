@@ -8,10 +8,10 @@ $(document.body).ready(() => {
 
     $('#fullpage').fullpage({
         licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE',
-        anchors: ['firstPage', 'secondPage'],
+        anchors: ['firstPage', 'secondPage', 'thirdPage'],
         navigation: true,
         navigationPosition: 'right',
-        navigationTooltips: ['소개', '사용기술'],
+        navigationTooltips: ['소개', '사용기술', '발표영상'],
         scrollingSpeed: 1000,
         autoScrolling: true,
         scrollOverflow: true,
