@@ -23,8 +23,3 @@ $(document.body).ready(() => {
         }
     });
 })
-
-$('#subohora').click((e) => {
-    e.preventDefault();
-    location.href = "ohora.html";
-});
