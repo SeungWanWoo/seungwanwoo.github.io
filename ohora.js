@@ -11,7 +11,6 @@ $(document.body).ready(() => {
         anchors: ['firstPage', 'secondPage', 'thirdPage'],
         navigation: true,
         navigationPosition: 'right',
-        navigationTooltips: ['소개', '사용기술', '발표영상'],
         scrollingSpeed: 1000,
         autoScrolling: true,
         scrollOverflow: true,
@@ -28,3 +27,13 @@ $('#subohora').click((e) => {
     e.preventDefault();
     location.href = "ohora.html";
 });
+
+$('.ppt').click((e) => {
+    e.preventDefault();
+    location.href = "contents/Ohora-ver3.pptx";
+})
+
+$('.arranged').click((e) => {
+    e.preventDefault();
+    location.href = "contents/오호라 프로젝트.pptx";
+})

@@ -154,10 +154,13 @@ body {
 .useskill {
     text-align: center;
     margin-bottom: 50px;
-    font-size: 4.0em;
+    font-size: 3.0em;
     font-family: 'Do Hyeon', sans-serif;
 }
 
+#imgLang {
+    text-align: center;
+}
 /**section2**/
 #section2 {
     text-align: center;
@@ -168,4 +171,13 @@ body {
     bottom: 0;
     width: 3px;
     background-color: gray;
+}
+
+.downloadArea {
+    margin-top: 20px;
+}
+
+/* 오른쪽 점 */
+.fp-tooltip {
+    color: black;
 }
