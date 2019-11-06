@@ -4,14 +4,18 @@ body {
     background-color: #f5f5f5;
 }
 
-strong {
-    font-size: 2.0em;
-}
-
 #section0, #section1, #section2 {
     min-height: 100vh;
 }
 
+#profiledoor, #projectdoor {
+    margin: 40px 0;
+    font-size: 4em;
+    color: #000000;
+    text-shadow: 2px 2px 2px gray;
+    font-style: bold;
+    font-family: 'Noto Sans KR', 'Noto Sans', sans-serif;
+}
 /* First Section */
 /* ----------------------------------------------- */
 #section0 {
@@ -20,23 +24,42 @@ strong {
     z-index: -1;
 }
 
-.welcome1 {
+#introduce1 {
+    box-shadow: 0px 0px 50px #000;
+    border: 0 rgba(0, 0, 0, 0.4);
+    padding-top: 20px;
+    background-color: rgba(0, 0, 0, 0.4);
+    height: 100px;
+    margin: 20px auto;
+}
+
+.maindoor {
     z-index: 1;
     color: white;
     font-style: bold;
-    font-family: 'Do Hyeon', sans-serif;
+    font-family: 'Noto Sans KR', sans-serif;
+    margin: auto;
 }
 
-#myInfo {
-    margin-left: 30%;
+#introduce2 {
+    box-shadow: 0px 0px 50px #000;
+    border: 0 rgba(0, 0, 0, 0.4);
+
+    padding: 20px;
+    width: 760px;
+    height: 300px;
+    background-color: rgba(0, 0, 0, 0.4);
+    margin: 20px auto;
+}
+
+.subdoor {
     text-align: left;
+    z-index: 1;
     color: white;
-    font-style: bold;
+    font-family: 'Noto Sans KR', 'Noto Sans', sans-serif;
+    margin: 20px auto;
 }
 
-#myInfo h4 {
-    margin: 20px;
-}
 
 /* Second Section */
 /* ----------------------------------------------- */
@@ -47,18 +70,12 @@ strong {
     background-color: rgba(255, 255, 255, 1.0);
 }
 
-#welcome2 {
-    margin: 50px 0;
-    font-size: 4em;
-    color: #000000;
-    text-shadow: 2px 2px 2px gray;
-    font-family: 'Do Hyeon', sans-serif;
-}
 
-#aboutInfo, #skillLang, #skillWeb, #framework, #database, #shapeMgn {
+
+#skills {
     margin: auto;
     font-size: 3.0em;
-    font-family: 'Do Hyeon', sans-serif;
+    font-family: 'Noto Sans KR', 'Noto Sans', sans-serif;
 }
 
 #sideBar {
@@ -71,6 +88,7 @@ strong {
 #aboutMe {
     max-width: 50%;
     text-align: left;
+    font-family: 'Noto Sans KR', sans-serif;
 }
 
 .thumbnailContainer {
@@ -116,22 +134,28 @@ strong {
     border-radius: 5px;
 }
 
-#moreButton {
-    color: white;
-    position: absolute;
-    top:70%;
-    left:50%;
-    transform: translate(-50%, -50%);
-    font-size: 1.0em;
-    padding: 50%;
-}
-
 .thumbnailContainer:hover .overlay {
     opacity: .6;
 }
 
 .thumbnailContainer:hover .overlayRotate {
     transform: rotate(0deg);
+}
+
+#css {
+    padding: 0 25px;
+}
+
+#bootstrap {
+    width: 200px; height: auto;
+}
+
+#npm {
+    width: 200px; height: auto;
+}
+
+.npmcontainer {
+    padding-top: 75px;
 }
 /* ----------------------------------------------- */
 
@@ -149,6 +173,11 @@ strong {
     min-width: 20vw;
     max-width: 20vw;
     overflow: hidden;
+}
+
+.card-text {
+    text-align: left;
+    font-family: 'Noto Sans KR', 'Noto Sans', sans-serif;
 }
 
 #card-container {
@@ -236,7 +265,15 @@ strong {
     bottom: 1rem; 
     left: 50%; 
     transform: translateX(-50%);
-} 
+    cursor: default;
+    color: white;
+}
+
+.scroll-link:hover {
+    color: white;
+    text-decoration: none;
+}
+
 .mouse { 
     max-width: 2.5rem; 
     width: 100%; 

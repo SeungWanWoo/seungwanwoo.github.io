@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -7,7 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.7/fullpage.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Do+Hyeon|Jua&display=swap&subset=korean" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:400,500,700,900|Noto+Sans:400,700&display=swap&subset=korean,latin-ext" rel="stylesheet">
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="menu.css">
 </head>
@@ -22,22 +24,32 @@
         </ul>
     </nav>
     <div id="fullpage">
+        <!-- front door -->
         <div class="section active fluid-container" id="section0">
-            <div id="introduce">
-                <div class="fluid-container">
-                    <h1 class="animated fadeInDown welcome1">Wep Programmer 우승완의 개발 포트폴리오입니다.</h1>
-                    <div class="row animated fadeInDown" id="my">
-                        <div class="col" id="myInfo">
-                            <h4><i class="fas fa-user"></i> 1994.03.18 남</h4>
-                            <h4><i class="fas fa-user-graduate"></i> 2010.03 ~ 2013.02 - 양명고등학교 졸업</h4>
-                            <h4><i class="fas fa-user-graduate"></i> 2013.03 ~ 2019.02 - 한국산업기술대학교 졸업</h4>
-                            <h4><i class="fas fa-user-graduate"></i> 2018.12.28 ~ 2019.07.01 - 비트캠프 수료<br>(UI/UX엔지니어링 및 응용 SW엔지니어링
-                                양성과정)</h3>
-                            <h4><i class="fas fa-certificate"></i> 정보처리기사 취득(19.08.16)</h4>
-                        </div>
-                    </div>
+
+            <!-- 대문 글 -->
+            <div class="fluid-container">
+
+                <!-- 글씨가 어느 배경에서든 잘보이기 위해서 얇은 막 생성 -->
+                <div class="container" id="introduce1">
+                    <h1 class="animated fadeInDown maindoor">톡톡튀는 아이디어를 가진 개발자 우승완 입니다.</h1>
                 </div>
-                <a class="scroll-link" href="#content" style="cursor: default;">
+
+                <div class="container" id="introduce2">
+                    <h3 class="subdoor">
+                        <i class="fas fa-user-graduate"></i> 
+                        2018.12.28 ~ 2019.07.01 - 비트캠프 수료
+                        <br>
+                        (UI/UX엔지니어링 및 응용 SW엔지니어링 양성과정)
+                    </h3>
+                    <h3 class="subdoor"><i class="fas fa-certificate"></i> 정보처리기사 취득(19.08.16)</h3>
+                    <h4 class="subdoor"><i class="fas fa-user"></i> 생년월일 1994.03.18</h4>
+                    <h4 class="subdoor"><i class="fas fa-user-graduate"></i> 한국산업기술대학교 컴퓨터공학과 졸업</h4>
+                </div>
+
+                <!-- mouse 휠 애니메이션 -->
+                <a class="scroll-link" href="#content">
+                    <h4>scroll</h4>
                     <svg class="mouse" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 76 130" preserveAspectRatio="xMidYMid meet">
                         <g fill="none" fill-rule="evenodd">
                             <rect width="70" height="118" x="1.5" y="1.5" stroke="#FFF" stroke-width="3" rx="36"/>
@@ -45,200 +57,295 @@
                         </g>
                     </svg>
                 </a>
-            </div>
-        </div>
+                <!-- mouse end -->
+
+            </div> <!-- div - fluid-container end -->
+        </div> <!-- section0 end -->
+
+        <!-- profile -->
         <div class='section fluid-container' id="section1">
-            <div class="animated fadeInDown delay-0.8s" id="welcome2">
-                <p>고객 입장에서는 친근한 개발자가 되겠습니다.</p>
-            </div>
+            <!-- profile 대문 글 -->
+            <h1 id="profiledoor">Profile</h1>
+
             <hr>
+
+            <!-- 내용 시작 -->
             <div class="row">
-                <div id="aboutInfo">
-                    <i class="fas fa-star"></i><br>Why did you have<br>such a dream?
-                </div>
+                <!-- 왜 프로그래머가 되기로 했는지? -->
+                <div class="col" id="skills">
+                    <i class="fas fa-star"></i>
+                    <br>
+                    Why did you have
+                    <br>
+                    such a dream?
+                </div> <!-- col end -->
                 <div id="sideBar"></div>
                 <div class="col" id="aboutMe">
-                    <p><strong>컴퓨터 공학을 다니면서</strong> 어떻게 미래를 설계해야할지 군 전역 후에도 길을 찾지 못했습니다.</p>
-                    <p>그러다 졸업을 위한 졸업 작품을 설계하기 시작하면서 프로그래밍에 대해 흥미를 갖기 시작했고</p>
-                    <p>제가 할 수 있는 모든 것을 동원하여 힘을 쏟아 보았지만 졸업 작품을 끝내 완성시키지 못했습니다.</p>
-                    <p>졸업 작품을 끝 맞추며 미완성이던 졸업 작품에 대한 미련을 갖게 되었습니다. 조금 더 프로그래밍</p>
-                    <p>기술을 알고 있었다면 졸업 작품을 성공적이게 끝 맞출 수 있었지 않았을까 하는 미련으로 대학교</p>
-                    <p>졸업 이후에 비트캠프라는 국비지원 프로그래밍 교육 학원을 다니게 되었습니다.</p>
+                    <p>&nbsp&nbsp컴퓨터 공학을 다니면서 어떻게 미래를 설계해야 할지 군 전역 후에도 길을 찾지 못했습니다. 그러다 졸업을 위한</p>
+                    <p>졸업 작품을 설계하기 시작하면서 <strong>프로그래밍에 대해 흥미</strong>를 갖기 시작했고 제가 할 수 있는 모든 것을 동원하여</p>
+                    <p>힘을 쏟아 보았지만 졸업 작품을 끝내 완성시키지 못했습니다. 졸업 작품을 끝 맞추며 미완성이던 졸업 작품에 대한</p>
+                    <p>미련을 갖게 되었습니다. <strong>더 정확한 프로그래밍 기술을 가지고 있었다면 졸업 작품을 성공적이게 끝 맞출 수 있었지</p>
+                    <p>않았을까</strong> 하는 미련으로 대학교 졸업 이후에 비트 캠프라는 국비지원 프로그래밍 교육 학원을 다니게 되었습니다.</p>
                     <hr>
-                    <p><strong>그 곳에서</strong> 저는 부족했던 프로그래밍 기술들을 배웠고 수료를 위한 프로젝트를 하면서 프로그래밍이라는</p>
-                    <p>분야에 흥미를 가지게 되었습니다. 특히 서로 간의 아이디어를 바탕으로 세워져가는 프로젝트를 보면서</p> 
-                    <p>지금까지 느끼지 못한 희열을 느꼈습니다. 계획한대로 바로바로 이뤄져가는 프로젝트를 보면서 설계의</p>
-                    <p>중요성을 알게 되었고, 서로 합이 맞게 동작하는 팀원들을 보면서 프로그래밍에서 팀워크의 중요성을</p> 
-                    <p>깨달았습니다. 이렇게 완성된 프로젝트는 좋은 모습의 결과물로 돌아와 성취감과 만족감 모두를</p> 
-                    <p>느낄 수 있었습니다.</p>
+                    <p>&nbsp&nbsp그곳에서 저는 부족했던 프로그래밍 기술들을 배웠고 수료를 위한 프로젝트를 하면서 프로그래밍이라는 분야에</p>
+                    <p>필요한 지식들을 가지게 되었습니다. 또한 서로 간의 아이디어를 바탕으로 세워져가는 프로젝트를 보면서 <strong>설계의</p>
+                    <p>중요성</strong>을 알게 되었고, 지금까지 느끼지 못한 희열을 느꼈습니다. 계획한 대로 바로바로 이뤄져가는 프로젝트를 보면서</p>
+                    <p>서로 합이 맞게 동작하는 팀원들을 보면서 프로그래밍에서 <strong>팀워크의 중요성</strong>을 깨달았습니다. 이렇게 완성된 프로젝트는</p>
+                    <p>좋은 모습의 결과물로 돌아와 성취감과 만족감 모두를 느낄 수 있었습니다.</p>
                     <hr>
-                    <p><strong>지금까지</strong> 큰 프로젝트 둘을 경험했습니다. 첫 프로젝트는 모든 면에서 부족함을 느꼈고 그 부족한 점을</p>
-                    <p>채우기 위하여 기술과 팀워크를 배웠습니다. 수료를 했던 지금도 많이 부족하지만 앞서의 경험처럼 저의</p> 
-                    <p>부족한 모든 것을 채울 자신이 있습니다. 계속해서 채워나가는 모습을 보여 드리겠습니다.</p>
+                    <p>&nbsp&nbsp지금까지 큰 프로젝트 둘을 경험했습니다. 첫 프로젝트는 모든 면에서 부족함을 느꼈고 그 <strong>부족한 점을 채우기 위하여 </p>
+                    <p>기술과 팀워크를 배웠습니다.</strong> 수료를 한 지금도 많이 부족하지만 앞서의 경험처럼 <strong>저의 부족한 모든 것을 채울 자신이 </p> 
+                    <p>있습니다.</strong> 계속해서 채워나가는 모습을 보여 드리겠습니다.</p>
                     </pre>
-                </div>
-            </div>
+                </div> <!-- col end-->
+                <!-- 프로그래머가 되기로 한 이유 및 각오 end -->
+            </div> <!-- row end -->
+
             <hr>
+
+            <!-- 사용할 수 있는 기술 -->
             <div class="row">
-                <div class="col" id="skillLang"><i
-                        class="fas fa-language"></i><br>What can you use<br>to programming
-                    language?</div>
+                <!-- 사용 가능 언어 -->
+                <div class="col" id="skills">
+                    <i class="fas fa-language"></i>
+                    <br>
+                    What can you use
+                    <br>
+                    to programming language?
+                </div>
                 <div id="sideBar"></div>
-                <div class="col" id="imgLang">
-                    <div class="row imgLangImages">
+                <div class="col">
+                    <div class="row">
+                        <!-- java -->
                         <div class="thumbnailContainer">
                             <img src="images/java.png">
                             <div class="overlay overlayRotate">
                                 <div class="text">intermediate</div>
-                                <a class="btn" id="moreButton"
-                                    href="https://github.com/SeungWanWoo/bitcamp-java-2018-12/tree/master/java-basic">
-                                    <i class="fab fa-github"></i>more
-                                </a>
                             </div>
                         </div>
+                        <!-- java end -->
 
+                        <!-- javascript -->
                         <div class="thumbnailContainer">
                             <img src="images/javascript.png">
                             <div class="overlay overlayRotate">
                                 <div class="text">intermediate</div>
-                                <a class="btn" id="moreButton"
-                                    href="https://github.com/SeungWanWoo/bitcamp-java-2018-12/tree/master/java-web/src/main/webapp/javascript">
-                                    <i class="fab fa-github"></i>more
-                                </a>
                             </div>
                         </div>
+                        <!-- javascript end -->
+
+                        <!-- c++ -->
                         <div class="thumbnailContainer">
                             <img src="images/c++.png">
                             <div class="overlay overlayRotate">
                                 <div class="text">beginner</div>
                             </div>
                         </div>
-                    </div>
-                </div>
-            </div>
+                        <!-- c++ end -->
+                    </div> <!-- row end -->
+                </div> <!-- col end -->
+            </div> <!-- programmingLang end -->
+
             <hr>
+
+            <!-- 사용할 수 있는 웹 기술 -->
             <div class="row">
-                <div class="col" id="skillWeb"><i
-                        class="fab fa-chrome"></i><br>What can you use<br> to web skills?</div>
+                <div class="col" id="skills">
+                    <i class="fab fa-chrome"></i>
+                    <br>
+                    What can you use
+                    <br>
+                    to web skills?
+                </div> <!-- col end -->
+
                 <div id="sideBar"></div>
+
                 <div class="col">
                     <div class="row">
+                        <!-- html -->
                         <div class="thumbnailContainer">
                             <img src="images/html.png">
                             <div class="overlay overlayRotate">
                                 <div class="text">beginner</div>
                             </div>
                         </div>
+                        <!-- html end -->
+
+                        <!-- css -->
                         <div class="thumbnailContainer">
-                            <img src="images/css-5.png" style="padding: 0 25px;">
+                            <img src="images/css-5.png" id="css">
                             <div class="overlay overlayRotate">
                                 <div class="text">beginner</div>
                             </div>
                         </div>
+                        <!-- css end -->
+
+                        <!-- jquery -->
                         <div class="thumbnailContainer">
                             <img src="images/jquery-logo.png">
                             <div class="overlay overlayRotate">
                                 <div class="text">intermediate</div>
                             </div>
                         </div>
+                        <!-- jquery end -->
+
                         <br>
+                        <!-- bootstrap -->
                         <div class="thumbnailContainer">
-                            <img src="images/bootstrap.jpeg" style="width: 200px; height: auto;">
+                            <img src="images/bootstrap.jpeg" id="bootstrap">
                             <div class="overlay overlayRotate">
                                 <div class="text">intermediate</div>
                             </div>
                         </div>
+                        <!-- bootstrap end -->
+
+                        <!-- handlebars -->
                         <div class="thumbnailContainer">
                             <img src="images/handlebars.png">
                             <div class="overlay overlayRotate">
                                 <div class="text">intermediate</div>
                             </div>
                         </div>
-                    </div>
-                </div>
-            </div>
+                        <!-- handlebars end -->
+                    </div> <!-- row end -->
+                </div> <!-- col-skills end -->
+            </div> <!-- webskills end -->
+
             <hr>
+
+            <!-- 사용할 수 있는 프레임워크 -->
             <div class="row">
-                <div class="col" id="framework"><i
-                        class="fas fa-wrench"></i><br>What can you use<br> to framework?</div>
+                <div class="col" id="skills">
+                    <i class="fas fa-wrench"></i>
+                    <br>
+                    What can you use
+                    <br>
+                    to framework?
+                </div> <!-- col end -->
+
                 <div id="sideBar"></div>
+
                 <div class="col">
                     <div class="row">
+
+                        <!-- spring framework-->
                         <div class="thumbnailContainer">
                             <img src="images/spring-3.png">
                             <div class="overlay overlayRotate">
                                 <div class="text">intermediate</div>
                             </div>
                         </div>
+                        <!-- spring framework end -->
 
+                        <!-- mybatis -->
                         <div class="thumbnailContainer">
                             <img src="images/mybatis.png">
                             <div class="overlay overlayRotate">
                                 <div class="text">intermediate</div>
                             </div>
                         </div>
-                    </div>
-                </div>
-            </div>
+                        <!-- mybatis end -->
+                    </div> <!-- row end -->
+                </div> <!-- col end -->
+            </div> <!-- framework end -->
+
             <hr>
+
+            <!-- 사용할 수 있는 데이터베이스 툴 -->
             <div class="row">
-                <div class="col" id="database"><i
-                        class="fas fa-database"></i><br>What can you use<br> to database?</div>
+                <div class="col" id="skills">
+                    <i class="fas fa-database"></i>
+                    <br>
+                    What can you use
+                    <br>
+                    to database?
+                </div> <!-- col end -->
+
                 <div id="sideBar"></div>
+
                 <div class="col">
                     <div class="row">
+                        <!-- mysql -->
                         <div class="thumbnailContainer">
                             <img src="images/mysql-5.png">
                             <div class="overlay overlayRotate">
                                 <div class="text">intermediate</div>
                             </div>
                         </div>
+                        <!-- mysql end -->
 
+                        <!-- mariaDB -->
                         <div class="thumbnailContainer">
                             <img src="images/maria-seal.jpg">
                             <div class="overlay overlayRotate">
                                 <div class="text">intermediate</div>
                             </div>
                         </div>
-                    </div>
-                </div>
-            </div>
+                        <!-- mariaDB end -->
+                    </div> <!-- row end -->
+                </div> <!-- col end -->
+            </div> <!-- database end -->
+
             <hr>
+
+            <!-- 사용할 수 있는 형상관리 툴 또는 기타 툴 -->
             <div class="row">
-                <div class="col" id="shapeMgn"><br>Etc..</div>
+                <div class="col" id="skills">
+                    <i class="fab fa-git-alt"></i>
+                    <br>
+                    Etc..
+                </div> <!-- col end -->
+
                 <div id="sideBar"></div>
+
                 <div class="col">
                     <div class="row">
+                        
+                        <!-- github -->
                         <div class="thumbnailContainer">
                             <img src="images/github-1.png">
                             <div class="overlay overlayRotate">
                                 <div class="text">intermediate</div>
                             </div>
                         </div>
-                        <div class="thumbnailContainer">
-                            <img src="images/npm.png" style="width: 200px; height: auto;">
+                        <!-- github end -->
+
+                        <!-- npm -->
+                        <div class="thumbnailContainer npmcontainer">
+                            <img src="images/npm.png" id="npm">
                             <div class="overlay overlayRotate">
                                 <div class="text">intermediate</div>
                             </div>
                         </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+                        <!-- npm end -->
 
+                    </div> <!-- row end -->
+                </div> <!-- col end -->
+            </div> <!-- etc end -->
+        </div> <!-- section1 end -->
+
+        <!-- project -->
         <div class='section fluid-container' id="section2">
-            <p id="welcome2">Project</p>
+
+            <p id="projectdoor">Project</p>
+
             <hr>
+            <!-- project menu -->
             <div class="fluid-container">
                 <div class="row card-columns justify-content-center">
+                    <!-- ohora project -->
                     <div class="col card" id="card-container">
                         <img src="images/project1-main.png" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Ohora 프로젝트</h5>
                             <p class="card-text">
-                                매뉴얼 전문 사이트 오호라 사이트입니다. 일반적으로 제품들에 대해서 배급되는 기본 제품 사용설명서들은
-                                보통 보기 어렵고 이해하기가 쉽지 않습니다. 그래서 자신이 구입한 제품에 대해서 보다 쉽게 사용법을 배
-                                우거나 자신만이 가지고 있는 제품에 대한 노하우를 공유하는 홈페이지를 만들게 되었습니다.
+                                &nbsp&nbsp매뉴얼 전문 사이트 오호라 사이트입니다.
+                                <br>
+                                &nbsp&nbsp일반적으로 제품들에 대해서 배급되는 기본 제품 사용설명서들은
+                                보통 보기 어렵고 이해하기가 쉽지 않습니다.
+                                <br>
+                                &nbsp&nbsp그래서 자신이 구입한 제품에 대해서 보다 쉽게 사용법을 배우거나 
+                                자신만이 가지고 있는 제품에 대한 노하우를 공유하는 홈페이지를 만들게 되었습니다.
                             </p>
                             <div class="overlay overlayRotate">
                                 <p class="textCard">Complete</p>
@@ -246,13 +353,14 @@
                             </div>
                         </div>
                     </div>
+                    <!-- ohota project end -->
+
                     <div class="col card" id="card-container">
                         <img src="images/portpolio.png" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">포트폴리오</h5>
                             <p class="card-text">
-                                저의 포트폴리오를 어떻게 할까 하다가 직접 제작하게 되었습니다.
-                                부족하지만 귀엽게 봐주셨으면 좋겠습니다.
+                                제 이야기가 담긴<br>저만의 사이트를 만들어 보았습니다.
                             </p>
                             <div class="overlay overlayRotate">
                                 <p class="textCard">Proceeding</p>
