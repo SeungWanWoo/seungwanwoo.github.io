@@ -101,6 +101,9 @@ body {
 }
 
 /* section1 */
+#section {
+    text-align: center;
+}
 .text {
     color: white;
     position: absolute;

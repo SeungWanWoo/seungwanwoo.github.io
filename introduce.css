@@ -1,0 +1,20 @@
+body {
+    background-color: #f4f4f4;
+}
+
+/* ***************************************************** */
+
+.font-style1 {
+    font-family: 'Noto Sans KR';
+    font-weight: lighter;
+}
+
+.font-style2 {
+    font-family: 'Noto Sans KR';
+    font-weight: lighter;
+    font-size: 16px;
+}
+
+/* ***************************************************** */
+#suburb {
+}
