@@ -3,7 +3,7 @@ body {
 }
 
 /* ***************************************************** */
-
+/* cabinet1 */
 .font-style1 {
     font-family: 'Noto Sans KR';
     font-weight: lighter;
@@ -12,9 +12,68 @@ body {
 .font-style2 {
     font-family: 'Noto Sans KR';
     font-weight: lighter;
-    font-size: 16px;
+    font-size: 18px;
 }
 
+.font-style1[data-set~="mt40"] {
+    margin-top:40px;
+}
+
+.font-style1[data-set~="mt60"] {
+    margin-top:60px;
+}
+
+.font-style1[data-set~="mb20"] {
+    margin-bottom:20px;
+}
+
+.font-style1[data-set~="mb50"] {
+    margin-bottom:50px;
+}
 /* ***************************************************** */
-#suburb {
+/* emptyset */
+#emptyset {
+    height:60px;
+    width: auto;
+}
+/* cabinet3 */
+.cabi-img {
+    height: 40px;
+    width: auto;
+}
+
+.circle {
+    margin: 50px;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.circle[data-set~="short-lang"] {
+    padding-top: 40px; 
+}
+
+.circle[data-set~="long-lang"] {
+    padding-top: 30px; 
+}
+
+#circle-one {
+    background-color: #b5d5d5;
+}
+
+#circle-two {
+    background-color: rgb(119, 172, 221);
+}
+
+#circle-three {
+    background-color: #a0a2f6;
+}
+
+#circle-four {
+    background-color: #bba8f1;
+}
+
+#circle-five {
+    background-color: #d6c4ec;
 }

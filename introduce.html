@@ -23,7 +23,7 @@
     <!-- topmenu end -->
     <!-- suburb start -->
     <div class="fluid-container" id="suburb">
-        <div class="emptyset" style="height:60px; width: auto;"></div>
+        <div id="emptyset"></div>
         <!-- cabinet1 start -->
         <div class="container" id="cabinet1">
             <h2 class="font-style1">사용하는 고객을 먼저 생각하는 개발자<br class="widthlange1">우승완 입니다.</h2>
@@ -31,41 +31,41 @@
         <!-- cabinet1 end -->
 
         <div class="fluid-container row justify-content-center" id="cabinet3">
-            <div class="circle" style="padding-top: 40px; margin: 50px; height: 150px; width: 150px; border-radius: 50%; background-color: #b5d5d5; text-align: center;">
-                <img src="images/sprout.svg" style="height: 40px; width: auto;"><br>
+            <div class="circle" data-set="short-lang" id="circle-one">
+                <img src="images/introduce/sprout.svg" class="cabi-img"><br>
                 주니어 개발자
             </div>
-            <div class="circle" style="padding-top: 30px; margin: 50px; height: 150px; width: 150px; border-radius: 50%; background-color: rgb(119, 172, 221); text-align: center;">
-                <img src="images/lightbulb.svg" style="height: 40px; width: auto; "><br>
+            <div class="circle" data-set="long-lang" id="circle-two">
+                <img src="images/introduce/lightbulb.svg" class="cabi-img"><br>
                 톡톡튀는<br>
                 아이디어
             </div>
-            <div class="circle" style="padding-top: 40px; margin: 50px; height: 150px; width: 150px; border-radius: 50%; background-color: #a0a2f6; text-align: center;">
-                <img src="images/sketch.svg" style="height: 40px; width: auto;"><br>
+            <div class="circle" data-set="short-lang" id="circle-three">
+                <img src="images/introduce/sketch.svg" class="cabi-img"><br>
                 약간의 디자인 감각
             </div>
-            <div class="circle" style="padding-top: 40px; margin: 50px; height: 150px; width: 150px; border-radius: 50%; background-color: #bba8f1; text-align: center;">
-                <img src="images/html-coding.svg" style="height: 40px; width: auto;"><br>
+            <div class="circle" data-set="short-lang" id="circle-four">
+                <img src="images/introduce/html-coding.svg" class="cabi-img"><br>
                 깔끔한 코딩
             </div>
-            <div class="circle" style="padding-top: 30px; margin: 50px; height: 150px; width: 150px; border-radius: 50%; background-color: #d6c4ec; text-align: center;">
-                <img src="images/man-thinking.svg" style="height: 40px; width: auto;"><br>
+            <div class="circle" data-set="long-lang" id="circle-five">
+                <img src="images/introduce/man-thinking.svg" class="cabi-img"><br>
                 고객을 먼저<br>
                 생각하는 자세
             </div>
         </div>
         <!-- cabinet2 start -->
         <div class="container" id="cabinet2">
-            <h1 class="font-style1" style="margin-bottom:50px;">개발자 소개</h1>
+            <h1 class="font-style1" data-set="mb50">개발자 소개</h1>
             <pre class="font-style2">
-작은 아이디어로 시작된 프로젝트가 사람들의 노력과 협동으로 실체화가 되는 모습을 보고
+작은 아이디어로 시작된 프로젝트가 사람들의 노력과 협동으로 구축 되는 모습을 보고
 매력을 느껴 프로그래머가 되기로 결심했습니다.
 지금은 Spring Framework와 Java, javascript를 주로 사용하지만 계속 공부하여 더 넓은 영역으로
 제 영역을 넓히고 싶습니다.
 
 지금까지 대학과 국비지원 프로젝트에서 장기 프로젝트를 두 번 경험해 보았으며 둘 모두 기획부터
 배포까지 참여했습니다.
-최근엔 프론트 앤드쪽으로 관심을 가지고 있어 방문하는 웹사이트들 중 마음에 드는 부분의 라이브러리나 기술을 제가
+최근엔 프론트 앤드 쪽으로 관심을 가지고 있어 방문하는 웹사이트들 중 마음에 드는 부분의 라이브러리나 기술을 제가
 사용할 수 있게 공부 중에 있습니다.
 
 언제나 노력하는 개발자 우승완이 되겠습니다.
@@ -75,9 +75,22 @@
     </div>
     <!-- suburb end -->
     <hr>
+    <!-- skills&ability start -->
     <div class="container" id="skillsNability">
-
+        <h1 class="font-style1" data-set="mb20 mt40">기술스택 소개</h1>
+        <pre class="font-style2">
+지금까지 크고 작은 프로젝트를 경험하면서 겪었던 기술들입니다.
+마우스를 올리시면 해당 기술들을 어느정도 다루는지 나타내는 정도를 보실 수 있습니다.
+코드를 보고 이해할 수 있는 정도면 초급(beginner)로 표현하였고, 어느정도 사용할 줄 알면 중급(intermediate)로 표기했습니다.
+        </pre>
+        <!-- skilltable start -->
+        <div class="row mt-3" id="skilltable">
+            <img class="col-sm-2" src="images/introduce/front-end.svg">
+            <h2 class="font-style1 col-sm-3">프론트 앤드 기술</h2>
+        </div>
+        <!-- skilltable end -->
     </div>
+    <!-- skills&ability end -->
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
