@@ -9,10 +9,16 @@ body {
     font-weight: lighter;
 }
 
+.font-style1m {
+    font-family: 'Noto Sans KR';
+    font-weight: bold;
+    font-size: 17px;
+}
+
 .font-style2 {
     font-family: 'Noto Sans KR';
     font-weight: lighter;
-    font-size: 18px;
+    font-size: 16px;
 }
 
 .font-style1[data-set~="mt40"] {
@@ -76,4 +82,14 @@ body {
 
 #circle-five {
     background-color: #d6c4ec;
+}
+
+@media ( max-width: 480px ) {
+    .circle {
+        margin: 10px;
+        height: 150px;
+        width: 150px;
+        border-radius: 50%;
+        text-align: center;
+    }
 }
