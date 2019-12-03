@@ -3,7 +3,7 @@ body {
 }
 
 /* ***************************************************** */
-/* cabinet1 */
+/* font-style */
 .font-style1 {
     font-family: 'Noto Sans KR';
     font-weight: lighter;
@@ -36,13 +36,58 @@ body {
 .font-style1[data-set~="mb50"] {
     margin-bottom:50px;
 }
+
+/* ***************************************************** */
+/* img-style */
+.img-style-main {
+    height: 100px;
+    width: 100px;
+    text-align: center;
+}
+
+.img-style-main > img {
+    height:100px;
+    width: 100px;
+}
+
+.img-style-sm {
+    height: 130px;
+    width: auto;
+}
+
+.img-style-md {
+    height: 110px;
+    width: auto;
+}
+
+.img-style-lg {
+
+}
+/* ***************************************************** */
+/* div-style */
+.div-style {
+    height: 130px;
+    width: 130px;
+    text-align: center;
+}
 /* ***************************************************** */
 /* emptyset */
 #emptyset {
     height:60px;
     width: auto;
 }
-/* cabinet3 */
+
+/* hollow space */
+.hs {
+    margin-top: 100px;
+}
+/* ***************************************************** */
+/* limitword */
+.limitword {
+    max-width: 200px;
+}
+/* ***************************************************** */
+/* cabinet */
 .cabi-img {
     height: 40px;
     width: auto;
@@ -83,8 +128,48 @@ body {
 #circle-five {
     background-color: #d6c4ec;
 }
+/* *************************************************** */
+#tomcatimg > img {
+    height: 90px;
+    width: auto;
+}
 
+#mysqlimg > img {
+    height: 100px;
+    width: auto;
+}
 
+#mariadbimg > img {
+    height: 80px;
+    width: auto;
+}
+
+#npmimg {
+    padding-top: 50px;
+}
+
+#npmimg > img {
+    height: 30px;
+    width: auto;
+}
+
+#junitimg {
+    padding-top: 35px;
+}
+
+#junitimg > img {
+    height: 30px;
+    width: auto;
+}
+
+#log4jimg {
+    padding-top: 30px;
+}
+
+#log4jimg > img {
+    height: 40px;
+    width: auto;
+}
 /* *************************************************** */
 /* mobile */
 @media ( max-width: 480px ) {
