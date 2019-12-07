@@ -13,6 +13,7 @@ body {
     font-family: 'Noto Sans KR';
     font-weight: lighter;
     font-size: 16px;
+    line-height: 100%;
 }
 
 .font-style1[data-set~="mt40"] {
@@ -84,12 +85,16 @@ body {
     width: auto;
 }
 
-#cabinet1 p {
+#cabinet1 .font-style1 {
     font-size: 2.4em;
 }
 
-#cabinet2 p {
+#cabinet2 .font-style1 {
     font-size: 2.4em;
+}
+
+#cabinet3 {
+    margin-bottom: 40px;
 }
 
 .circle {
@@ -180,15 +185,10 @@ body {
 @media ( max-width: 768px ) {
     .circle {
         margin: 10px;
-        height: 150px;
-        width: 150px;
+        height: 135px;
+        width: 135px;
         border-radius: 50%;
         text-align: center;
-    }
-
-    #emptyset {
-        height:120px;
-        width: auto;
     }
 
     h2 > .font-style1 {
@@ -196,19 +196,33 @@ body {
     }
 
     #emptyset {
-        height:30px;
+        height: 60px;
         width: auto;
     }
 
-    #cabinet1 p {
-        font-size: 1.3em;
+    #cabinet1 .font-style1 {
+        font-size: 1.6em;
     }
 
-    #cabinet2 p {
-        font-size: 1.4em;
+    #cabinet2 .font-style1 {
+        font-size: 1.6em;
+    }
+
+    #skillsNability .font-style1 {
+        font-size: 1.6em;
     }
 
     .font-style2 {
-        font-size: 14px;
+        font-size: 16px;
+        line-height: 160%;
+    }
+
+    .img-style-main {
+        height: 80px;
+        width: auto;
+    }
+
+    #frontendintro {
+        margin-bottom: 20px;
     }
 }
