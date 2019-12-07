@@ -8,454 +8,481 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="menu.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="introduce.css">
 </head>
 <body>
     <!-- topmenu start -->
-    <nav id="topmenu">
+    <!-- <nav id="topmenu">
         <ul id="menu">
             <li class="btn active menulink"><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
             <li class="btn menulink"><a href="introduce.html"><i class="fas fa-info-circle"></i> About Me</a></li>
             <li class="btn menulink"><a href="#thirdPage"><i class="fab fa-github-alt"></i> Project</a></li>
             <li class="btn menulink"><a href="#forthPage"><i class="fas fa-location-arrow"></i> Next..</a></li>
         </ul>
+    </nav> -->
+    <nav class="navbar navbar-expand-lg navbar-light" style="height: 60px; width: 100%; position:fixed; background-color:#f8f8f8; z-index: 1;">
+        <a class="navbar-brand" href="#">Wany</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item btn active">
+              <a class="nav-link" href="index.html" style="font-size: 1.2em;"><i class="fas fa-home"></i> Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item btn">
+                <a class="nav-link" href="#" style="font-size: 1.2em;"><i class="fab fa-github-alt"></i> Project</a>
+              </li>
+          </ul>
+        </div>
     </nav>
     <!-- topmenu end -->
-    <!-- suburb start -->
-    <div class="fluid-container" id="suburb">
-        <div id="emptyset"></div>
-        <!-- cabinet1 start -->
-        <div class="container" id="cabinet1">
-            <h2 class="font-style1">사용하는 고객을 먼저 생각하는 개발자<br class="widthlange1">우승완 입니다.</h2>
-        </div>
-        <!-- cabinet1 end -->
 
-        <div class="fluid-container row justify-content-center" id="cabinet3">
-            <div class="circle" data-set="short-lang" id="circle-one">
-                <img src="images/introduce/suburb/sprout.svg" class="cabi-img"><br>
-                <p class="font-style1m">주니어 개발자</p>
+    <div class="wrab" style="z-index: 1; position: relative; background-color: #f4f4f4;">
+        <!-- suburb start -->
+        <div class="fluid-container" id="suburb">
+            <div id="emptyset"></div>
+            <!-- cabinet1 start -->
+            <div class="container" id="cabinet1">
+                <p class="font-style1">사용하는 고객을 먼저 생각하는 개발자<br class="widthlange1">우승완 입니다.</p>
             </div>
-            <div class="circle" data-set="long-lang" id="circle-two">
-                <img src="images/introduce/suburb/lightbulb.svg" class="cabi-img"><br>
-                <p class="font-style1m">톡톡튀는<br>
-                아이디어</p>
+            <!-- cabinet1 end -->
+
+            <div class="fluid-container row justify-content-center" id="cabinet3">
+                <div class="circle" data-set="short-lang" id="circle-one">
+                    <img src="images/introduce/suburb/sprout.svg" class="cabi-img"><br>
+                    <p class="font-style1m">주니어 개발자</p>
+                </div>
+                <div class="circle" data-set="long-lang" id="circle-two">
+                    <img src="images/introduce/suburb/lightbulb.svg" class="cabi-img"><br>
+                    <p class="font-style1m">톡톡튀는<br>
+                    아이디어</p>
+                </div>
+                <div class="circle" data-set="short-lang" id="circle-three">
+                    <img src="images/introduce/suburb/sketch.svg" class="cabi-img"><br>
+                    <p class="font-style1m">약간의 디자인 감각</p>
+                </div>
+                <div class="circle" data-set="short-lang" id="circle-four">
+                    <img src="images/introduce/suburb/html-coding.svg" class="cabi-img"><br>
+                    <p class="font-style1m">깔끔한 코딩</p>
+                </div>
+                <div class="circle" data-set="long-lang" id="circle-five">
+                    <img src="images/introduce/suburb/man-thinking.svg" class="cabi-img"><br>
+                    <p class="font-style1m">고객을 먼저<br>
+                    생각하는 자세</p>
+                </div>
             </div>
-            <div class="circle" data-set="short-lang" id="circle-three">
-                <img src="images/introduce/suburb/sketch.svg" class="cabi-img"><br>
-                <p class="font-style1m">약간의 디자인 감각</p>
+            <!-- cabinet2 start -->
+            <div class="container" id="cabinet2">
+                <p class="font-style1" data-set="mb50">개발자 소개</p>
+                <pre class="font-style2">
+    작은 아이디어로 시작된 프로젝트가 사람들의 노력과 협동으로 구축 되는 모습을 보고 매력을 느껴 프로그래머가 되기로 결심했습니다.
+    지금은 Spring Framework와 Java, javascript를 주로 사용하지만 계속 공부하여 더 넓은 영역으로 제 영역을 넓히고 싶습니다.
+
+    지금까지 대학과 국비지원 프로젝트에서 장기 프로젝트를 두 번 경험해 보았으며 둘 모두 기획부터 배포까지 참여했습니다.
+    최근엔 프론트 앤드 쪽으로 관심을 가지고 있어 방문하는 웹사이트에서 특이한 라이브러리나 기술을 제가 사용할 수 있게 공부 중에 있습니다.
+
+    언제나 노력하는 개발자 우승완이 되겠습니다.
+                </pre>
             </div>
-            <div class="circle" data-set="short-lang" id="circle-four">
-                <img src="images/introduce/suburb/html-coding.svg" class="cabi-img"><br>
-                <p class="font-style1m">깔끔한 코딩</p>
-            </div>
-            <div class="circle" data-set="long-lang" id="circle-five">
-                <img src="images/introduce/suburb/man-thinking.svg" class="cabi-img"><br>
-                <p class="font-style1m">고객을 먼저<br>
-                생각하는 자세</p>
-            </div>
+            <!-- cabinet2 end -->
         </div>
-        <!-- cabinet2 start -->
-        <div class="container" id="cabinet2">
-            <h1 class="font-style1" data-set="mb50">개발자 소개</h1>
+        <!-- suburb end -->
+        <hr>
+        <!-- skills&ability start -->
+        <div class="container" id="skillsNability" style="margin-bottom: 300px; z-index:2;">
+            <h1 class="font-style1" data-set="mb20 mt40">기술스택 소개</h1>
             <pre class="font-style2">
-작은 아이디어로 시작된 프로젝트가 사람들의 노력과 협동으로 구축 되는 모습을 보고 매력을 느껴 프로그래머가 되기로 결심했습니다.
-지금은 Spring Framework와 Java, javascript를 주로 사용하지만 계속 공부하여 더 넓은 영역으로 제 영역을 넓히고 싶습니다.
-
-지금까지 대학과 국비지원 프로젝트에서 장기 프로젝트를 두 번 경험해 보았으며 둘 모두 기획부터 배포까지 참여했습니다.
-최근엔 프론트 앤드 쪽으로 관심을 가지고 있어 방문하는 웹사이트에서 특이한 라이브러리나 기술을 제가 사용할 수 있게 공부 중에 있습니다.
-
-언제나 노력하는 개발자 우승완이 되겠습니다.
+    지금까지 크고 작은 프로젝트를 경험하면서 겪었던 기술들입니다.
+    마우스를 올리시면 해당 기술들을 어느정도 다루는지 나타내는 정도를 보실 수 있습니다.
+    코드를 보고 이해할 수 있는 정도면 초급(beginner)로 표현하였고, 어느정도 사용할 줄 알면 중급(intermediate)로 표기했습니다.
             </pre>
+            <!-- skilltable start -->
+            <div id="skilltable">
+                <!-- frontintro start -->
+                <div class="row hs" id="frontintro">
+                    <!-- frontendintro -->
+                    <div class="col-xl-4" id="frontendintro">
+                        <div class="row">
+                            <div class="img-style-main">
+                                <img src="images/introduce/frontend/front-end.svg">
+                            </div>
+                            <div class="col ml-1 pt-3 limitword">
+                                <h4 class="font-style1">Front-end</h4>
+                                <h6 class="font-style1">퍼블리싱</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- frontendintro end -->
+
+                    <!-- frontendskills -->
+                    <div class="col-xl-8" id="frontendskills">
+                        <div class="row">
+                            <!-- html5 -->
+                            <div class="col-sm" id="html5">
+                                <div class="row">
+                                    <div class="div-style">
+                                        <img src="images/introduce/frontend/html5.svg.png" class="img-style-sm">
+                                    </div>
+                                    <div class="col pt-3">
+                                        <h5 class="font-style1">HTML</h5>
+                                        <h6 class="font-style1">태그를 활용한<br>뼈대 구축</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- html5 end -->
+
+                            <!-- css3 -->
+                            <div class="col-sm" id="css3">
+                                <div class="row">
+                                    <div class="div-style">
+                                        <img src="images/introduce/frontend/css3.svg" class="img-style-sm">
+                                    </div>
+                                    <div class="col pt-3">
+                                        <h5 class="font-style1">CSS</h5>
+                                        <h6 class="font-style1">웹사이트의<br>스타일을 담당</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- css3 end -->
+                        </div>
+
+                        <div class="row">
+                            <!-- javascript -->
+                            <div class="col-sm mt-4" id="javascript">
+                                <div class="row">
+                                    <div class="div-style">
+                                        <img src="images/introduce/frontend/javascript.png" class="img-style-sm">
+                                    </div>
+                                    <div class="col pt-3">
+                                        <h5 class="font-style1">javascript</h5>
+                                        <h6 class="font-style1">라이브러리 활용과<br>애니메이션 동작</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- javascript end -->
+
+                            <!-- jquery -->
+                            <div class="col-sm mt-4" id="jquery">
+                                <div class="row">
+                                    <div class="div-style">
+                                        <img src="images/introduce/frontend/jquery.svg" class="img-style-sm">
+                                    </div>
+                                    <div class="col pt-3">
+                                        <h5 class="font-style1">jquery</h5>
+                                        <h6 class="font-style1">다양한 동작을<br>능률적으로 처리</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- jquery end -->
+                        </div>
+                        <!-- br -->
+                        <div class="row">
+                            <!-- handlebars -->
+                            <div class="col-sm mt-4" id="handlebars">
+                                <div class="row">
+                                    <div class="div-style">
+                                        <img src="images/introduce/frontend/handlebars-svg.png" class="img-style-sm">
+                                    </div>
+                                    <div class="col pt-3">
+                                        <h5 class="font-style1">handlebars</h5>
+                                        <h6 class="font-style1">javascript 라이브러리<br>데이터를 효율적으로 처리</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- handlebars end -->
+
+                            <!-- bootstrap -->
+                            <div class="col-sm mt-4" id="bootstrap">
+                                <div class="row">
+                                    <div class="div-style">
+                                        <img src="images/introduce/frontend/bootstrap-svg.png" class="img-style-md">
+                                    </div>
+                                    <div class="col pt-3">
+                                        <h5 class="font-style1">bootstrap</h5>
+                                        <h6 class="font-style1">css 라이브러리<br>레이아웃, 디자인 등을<br>효율적으로 처리</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- bootstrap end -->
+                        </div>
+                        <!-- br -->
+                    </div>
+                    <!-- frontendskills end -->
+                </div>
+                <!-- frontintro end -->
+
+                <!-- backintro start -->
+                <div class="row hs" id="backintro">
+                    <!-- backendintro -->
+                    <div class="col-xl-4" id="backendintro">
+                        <div class="row">
+                            <div class="img-style-main">
+                                <img src="images/introduce/backend/backend.svg">
+                            </div>
+                            <div class="col ml-1 pt-2 limitword">
+                                <h4 class="font-style1">Back-end</h4>
+                                <h6 class="font-style1">MVC2 패턴형 웹사이트 &<br>REST framework API<br>서버 구축</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- backendintro end -->
+
+                    <!-- backendskills -->
+                    <div class="col-xl-8" id="backendskills">
+                        <div class="row">
+                            <!-- java -->
+                            <div class="col-sm" id="java">
+                                <div class="row">
+                                    <div class="div-style">
+                                        <img src="images/introduce/backend/java.png" class="img-style-md">
+                                    </div>
+                                    <div class="col pt-3">
+                                        <h5 class="font-style1">java</h5>
+                                        <h6 class="font-style1">객체지향<br>다양한 디자인 패턴 활용</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- java end -->
+
+                            <!-- spring -->
+                            <div class="col-sm" id="spring">
+                                <div class="row">
+                                    <div class="div-style">
+                                        <img src="images/introduce/backend/spring.png" class="img-style-md">
+                                    </div>
+                                    <div class="col pt-2">
+                                        <h5 class="font-style1">spring</h5>
+                                        <h6 class="font-style1">기본 환경 설정 &<br>Mybatis같은 외부 라이브러리<br>활용 가능</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- br -->
+                        <div class="row">
+                            <!-- Apache tomcat -->
+                            <div class="col-sm mt-4" id="tomcat">
+                                <div class="row">
+                                    <div class="div-style" id="tomcatimg">
+                                        <img src="images/introduce/backend/tomcat.png">
+                                    </div>
+                                    <div class="col pt-2">
+                                        <h5 class="font-style1">Apache Tomcat</h5>
+                                        <h6 class="font-style1">기본 환경 설정 &<br>서버 배포 가능</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Apache tomcat end -->
+                            <!-- Mybatis -->
+                            <div class="col-sm mt-4" id="mybatis">
+                                <div class="row">
+                                    <div class="div-style">
+                                        <img src="images/introduce/backend/mybatis.png" class="img-style-md">
+                                    </div>
+                                    <div class="col pt-2">
+                                        <h5 class="font-style1">Mybatis</h5>
+                                        <h6 class="font-style1">기본 환경 설정 &<br>spring 연동 가능</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Mybatis end -->
+                        </div>
+                        <!-- <br> -->
+                        <div class="row">
+                            <!-- MySQL -->
+                            <div class="col-sm mt-4" id="mysql">
+                                <div class="row">
+                                    <div class="div-style" id="mysqlimg">
+                                        <img src="images/introduce/backend/mysql.svg">
+                                    </div>
+                                    <div class="col pt-2">
+                                        <h5 class="font-style1">MySQL</h5>
+                                        <h6 class="font-style1">여러 테이블 JOIN 경험 &<br>암호 해쉬화 가능</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- MySQL end -->
+                            <!-- mariaDB -->
+                            <div class="col-sm mt-4" id="mariadb">
+                                <div class="row">
+                                    <div class="div-style" id="mariadbimg">
+                                        <img src="images/introduce/backend/mariadb.png">
+                                    </div>
+                                    <div class="col pt-2">
+                                        <h5 class="font-style1">mariaDB</h5>
+                                        <h6 class="font-style1">MySQL에서 마이그레이션 가능</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Mybatis end -->
+                        </div>
+                    </div>
+                    <!-- backendskills end -->
+                </div>
+                <!-- backintro end -->
+
+                <!-- devtool -->
+                <div class="row hs" id="devtool">
+                    <!-- devtoolsintro -->
+                    <div class="col-xl-4" id="devtoolsintro">
+                        <div class="row">
+                            <div class="img-style-main">
+                                <img src="images/introduce/devtools/coding.svg">
+                            </div>
+                            <div class="col ml-1 pt-1 limitword">
+                                <h4 class="font-style1">Dev-tools</h4>
+                                <h6 class="font-style1">형상관리 & 라이브러리 관리<br>운영체제 등</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- devtoolsintro end -->
+
+                    <!-- devtoolsinfo -->
+                    <div class="col-xl-8" id="devtoolinfo">
+                        <div class="row">
+                            <!-- npm -->
+                            <div class="col-sm" id="npm">
+                                <div class="row">
+                                    <div  class="div-style" id="npmimg">
+                                        <img src="images/introduce/devtools/npm.svg">
+                                    </div>
+                                    <div class="col pt-2">
+                                        <h5 class="font-style1">npm</h5>
+                                        <h6 class="font-style1">사용 라이브러리 관리 &<br>효율적인 라이브러리 로딩</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- npm end -->
+
+                            <!-- cdn -->
+                            <div class="col-sm" id="cdn">
+                                <div class="row">
+                                    <div class="div-style">
+                                        <img src="images/introduce/devtools/cdnjs.png" class="img-style-sm">
+                                    </div>
+                                    <div class="col pt-2">
+                                        <h5 class="font-style1">cdnjs</h5>
+                                        <h6 class="font-style1">백앤드를 구축하지 않고<br>외부 라이브러리 사용시 적용</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- cdn end -->
+                        </div>
+                        <!-- br -->
+                        <div class="row">
+                            <!-- junit -->
+                            <div class="col-sm mt-4" id="junit">
+                                <div class="row">
+                                    <div class="div-style" id="junitimg">
+                                        <img src="images/introduce/devtools/junit5.png">
+                                    </div>
+                                    <div class="col pt-2">
+                                        <h5 class="font-style1">junit</h5>
+                                        <h6 class="font-style1">유지보수<br>기본적인 사용법 숙지</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- junit end -->
+
+                            <!-- log4j -->
+                            <div class="col-sm mt-4" id="log4j">
+                                <div class="row">
+                                    <div class="div-style" id="log4jimg">
+                                        <img src="images/introduce/devtools/log4j.png">
+                                    </div>
+                                    <div class="col pt-2">
+                                        <h5 class="font-style1">log4j</h5>
+                                        <h6 class="font-style1">유지보수<br>기본 설정 가능</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- log4j end -->
+                            
+                        </div>
+                        <!-- br -->
+                        <div class="row">
+                            <!-- git -->
+                            <div class="col-sm mt-4" id="git">
+                                <div class="row">
+                                    <div class="div-style">
+                                        <img src="images/introduce/devtools/github.png" class="img-style-sm">
+                                    </div>
+                                    <div class="col pt-2">
+                                        <h5 class="font-style1">git</h5>
+                                        <h6 class="font-style1">형상관리<br>(merge, branch etc)</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- git end -->
+
+                            <!-- gradle -->
+                            <div class="col-sm mt-4" id="gradle">
+                                <div class="row">
+                                    <div class="div-style">
+                                        <img src="images/introduce/devtools/gradle.png" class="img-style-md">
+                                    </div>
+                                    <div class="col pt-2">
+                                        <h5 class="font-style1">gradle</h5>
+                                        <h6 class="font-style1">빌드 자동화<br>기본 설정 가능</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- gradle end -->
+                        </div>
+                        <!-- br -->
+                        <div class="row">
+                            <!-- linux -->
+                            <div class="col-sm mt-4" id="linux">
+                                <div class="row">
+                                    <div class="div-style">
+                                        <img src="images/introduce/devtools/linux.png" class="img-style-md">
+                                    </div>
+                                    <div class="col pt-2">
+                                        <h5 class="font-style1">linux</h5>
+                                        <h6 class="font-style1">기본 명령어 숙지<br>서버 활용 경험 있음</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- linux end -->
+
+                            <!-- ubuntu -->
+                            <div class="col-sm mt-4" id="ubuntu">
+                                <div class="row">
+                                    <div class="div-style">
+                                        <img src="images/introduce/devtools/ubuntu.svg" class="img-style-md">
+                                    </div>
+                                    <div class="col pt-2">
+                                        <h5 class="font-style1">ubuntu</h5>
+                                        <h6 class="font-style1">현재 사용중인<br>linux 기반 OS</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- ubuntu end -->
+                        </div>
+                    </div>
+                    <!-- devtoolsinfo end -->
+                </div>
+                <!-- devtool end -->
+            </div>
+            <!-- skilltable end -->
         </div>
-        <!-- cabinet2 end -->
+        <!-- skills&ability end -->
     </div>
-    <!-- suburb end -->
-    <hr>
-    <!-- skills&ability start -->
-    <div class="container" id="skillsNability">
-        <h1 class="font-style1" data-set="mb20 mt40">기술스택 소개</h1>
-        <pre class="font-style2">
-지금까지 크고 작은 프로젝트를 경험하면서 겪었던 기술들입니다.
-마우스를 올리시면 해당 기술들을 어느정도 다루는지 나타내는 정도를 보실 수 있습니다.
-코드를 보고 이해할 수 있는 정도면 초급(beginner)로 표현하였고, 어느정도 사용할 줄 알면 중급(intermediate)로 표기했습니다.
-        </pre>
-        <!-- skilltable start -->
-        <div id="skilltable">
-            <!-- frontintro start -->
-            <div class="row hs" id="frontintro">
-                <!-- frontendintro -->
-                <div class="col-xl-4" id="frontendintro">
-                    <div class="row">
-                        <div class="img-style-main">
-                            <img src="images/introduce/frontend/front-end.svg">
-                        </div>
-                        <div class="col ml-1 pt-3 limitword">
-                            <h4 class="font-style1">Front-end</h4>
-                            <h6 class="font-style1">퍼블리싱</h6>
-                        </div>
-                    </div>
-                </div>
-                <!-- frontendintro end -->
-
-                <!-- frontendskills -->
-                <div class="col-xl-8" id="frontendskills">
-                    <div class="row">
-                        <!-- html5 -->
-                        <div class="col-sm" id="html5">
-                            <div class="row">
-                                <div class="div-style">
-                                    <img src="images/introduce/frontend/html5.svg.png" class="img-style-sm">
-                                </div>
-                                <div class="col pt-3">
-                                    <h5 class="font-style1">HTML</h5>
-                                    <h6 class="font-style1">태그를 활용한<br>뼈대 구축</h6>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- html5 end -->
-
-                        <!-- css3 -->
-                        <div class="col-sm" id="css3">
-                            <div class="row">
-                                <div class="div-style">
-                                    <img src="images/introduce/frontend/css3.svg" class="img-style-sm">
-                                </div>
-                                <div class="col pt-3">
-                                    <h5 class="font-style1">CSS</h5>
-                                    <h6 class="font-style1">웹사이트의<br>스타일을 담당</h6>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- css3 end -->
-                    </div>
-
-                    <div class="row">
-                        <!-- javascript -->
-                        <div class="col-sm mt-4" id="javascript">
-                            <div class="row">
-                                <div class="div-style">
-                                    <img src="images/introduce/frontend/javascript.png" class="img-style-sm">
-                                </div>
-                                <div class="col pt-3">
-                                    <h5 class="font-style1">javascript</h5>
-                                    <h6 class="font-style1">라이브러리 활용과<br>애니메이션 동작</h6>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- javascript end -->
-
-                        <!-- jquery -->
-                        <div class="col-sm mt-4" id="jquery">
-                            <div class="row">
-                                <div class="div-style">
-                                    <img src="images/introduce/frontend/jquery.svg" class="img-style-sm">
-                                </div>
-                                <div class="col pt-3">
-                                    <h5 class="font-style1">jquery</h5>
-                                    <h6 class="font-style1">다양한 동작을<br>능률적으로 처리</h6>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- jquery end -->
-                    </div>
-                    <!-- br -->
-                    <div class="row">
-                        <!-- handlebars -->
-                        <div class="col-sm mt-4" id="handlebars">
-                            <div class="row">
-                                <div class="div-style">
-                                    <img src="images/introduce/frontend/handlebars-svg.png" class="img-style-sm">
-                                </div>
-                                <div class="col pt-3">
-                                    <h5 class="font-style1">handlebars</h5>
-                                    <h6 class="font-style1">javascript 라이브러리<br>데이터를 효율적으로 처리</h6>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- handlebars end -->
-
-                        <!-- bootstrap -->
-                        <div class="col-sm mt-4" id="bootstrap">
-                            <div class="row">
-                                <div class="div-style">
-                                    <img src="images/introduce/frontend/bootstrap-svg.png" class="img-style-md">
-                                </div>
-                                <div class="col pt-3">
-                                    <h5 class="font-style1">bootstrap</h5>
-                                    <h6 class="font-style1">css 라이브러리<br>레이아웃, 디자인 등을<br>효율적으로 처리</h6>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- bootstrap end -->
-                    </div>
-                    <!-- br -->
-                </div>
-                <!-- frontendskills end -->
-            </div>
-            <!-- frontintro end -->
-
-            <!-- backintro start -->
-            <div class="row hs" id="backintro">
-                <!-- backendintro -->
-                <div class="col-xl-4" id="backendintro">
-                    <div class="row">
-                        <div class="img-style-main">
-                            <img src="images/introduce/backend/backend.svg">
-                        </div>
-                        <div class="col ml-1 pt-2 limitword">
-                            <h4 class="font-style1">Back-end</h4>
-                            <h6 class="font-style1">MVC2 패턴형 웹사이트 &<br>REST framework API<br>서버 구축</h6>
-                        </div>
-                    </div>
-                </div>
-                <!-- backendintro end -->
-
-                <!-- backendskills -->
-                <div class="col-xl-8" id="backendskills">
-                    <div class="row">
-                        <!-- java -->
-                        <div class="col-sm" id="java">
-                            <div class="row">
-                                <div class="div-style">
-                                    <img src="images/introduce/backend/java.png" class="img-style-md">
-                                </div>
-                                <div class="col pt-3">
-                                    <h5 class="font-style1">java</h5>
-                                    <h6 class="font-style1">객체지향<br>다양한 디자인 패턴 활용</h6>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- java end -->
-
-                        <!-- spring -->
-                        <div class="col-sm" id="spring">
-                            <div class="row">
-                                <div class="div-style">
-                                    <img src="images/introduce/backend/spring.png" class="img-style-md">
-                                </div>
-                                <div class="col pt-2">
-                                    <h5 class="font-style1">spring</h5>
-                                    <h6 class="font-style1">기본 환경 설정 &<br>Mybatis같은 외부 라이브러리<br>활용 가능</h6>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- br -->
-                    <div class="row">
-                        <!-- Apache tomcat -->
-                        <div class="col-sm mt-4" id="tomcat">
-                            <div class="row">
-                                <div class="div-style" id="tomcatimg">
-                                    <img src="images/introduce/backend/tomcat.png">
-                                </div>
-                                <div class="col pt-2">
-                                    <h5 class="font-style1">Apache Tomcat</h5>
-                                    <h6 class="font-style1">기본 환경 설정 &<br>서버 배포 가능</h6>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Apache tomcat end -->
-                        <!-- Mybatis -->
-                        <div class="col-sm mt-4" id="mybatis">
-                            <div class="row">
-                                <div class="div-style">
-                                    <img src="images/introduce/backend/mybatis.png" class="img-style-md">
-                                </div>
-                                <div class="col pt-2">
-                                    <h5 class="font-style1">Mybatis</h5>
-                                    <h6 class="font-style1">기본 환경 설정 &<br>spring 연동 가능</h6>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Mybatis end -->
-                    </div>
-                    <!-- <br> -->
-                    <div class="row">
-                        <!-- MySQL -->
-                        <div class="col-sm mt-4" id="mysql">
-                            <div class="row">
-                                <div class="div-style" id="mysqlimg">
-                                    <img src="images/introduce/backend/mysql.svg">
-                                </div>
-                                <div class="col pt-2">
-                                    <h5 class="font-style1">MySQL</h5>
-                                    <h6 class="font-style1">여러 테이블 JOIN 경험 &<br>암호 해쉬화 가능</h6>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- MySQL end -->
-                        <!-- mariaDB -->
-                        <div class="col-sm mt-4" id="mariadb">
-                            <div class="row">
-                                <div class="div-style" id="mariadbimg">
-                                    <img src="images/introduce/backend/mariadb.png">
-                                </div>
-                                <div class="col pt-2">
-                                    <h5 class="font-style1">mariaDB</h5>
-                                    <h6 class="font-style1">MySQL에서 마이그레이션 가능</h6>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Mybatis end -->
-                    </div>
-                </div>
-                <!-- backendskills end -->
-            </div>
-            <!-- backintro end -->
-
-            <!-- devtool -->
-            <div class="row hs" id="devtool">
-                <!-- devtoolsintro -->
-                <div class="col-xl-4" id="devtoolsintro">
-                    <div class="row">
-                        <div class="img-style-main">
-                            <img src="images/introduce/devtools/coding.svg">
-                        </div>
-                        <div class="col ml-1 pt-1 limitword">
-                            <h4 class="font-style1">Dev-tools</h4>
-                            <h6 class="font-style1">형상관리 & 라이브러리 관리<br>운영체제 등</h6>
-                        </div>
-                    </div>
-                </div>
-                <!-- devtoolsintro end -->
-
-                <!-- devtoolsinfo -->
-                <div class="col-xl-8" id="devtoolinfo">
-                    <div class="row">
-                        <!-- npm -->
-                        <div class="col-sm" id="npm">
-                            <div class="row">
-                                <div  class="div-style" id="npmimg">
-                                    <img src="images/introduce/devtools/npm.svg">
-                                </div>
-                                <div class="col pt-2">
-                                    <h5 class="font-style1">npm</h5>
-                                    <h6 class="font-style1">사용 라이브러리 관리 &<br>효율적인 라이브러리 로딩</h6>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- npm end -->
-
-                        <!-- cdn -->
-                        <div class="col-sm" id="cdn">
-                            <div class="row">
-                                <div class="div-style">
-                                    <img src="images/introduce/devtools/cdnjs.png" class="img-style-sm">
-                                </div>
-                                <div class="col pt-2">
-                                    <h5 class="font-style1">cdnjs</h5>
-                                    <h6 class="font-style1">백앤드를 구축하지 않고<br>외부 라이브러리 사용시 적용</h6>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- cdn end -->
-                    </div>
-                    <!-- br -->
-                    <div class="row">
-                        <!-- junit -->
-                        <div class="col-sm mt-4" id="junit">
-                            <div class="row">
-                                <div class="div-style" id="junitimg">
-                                    <img src="images/introduce/devtools/junit5.png">
-                                </div>
-                                <div class="col pt-2">
-                                    <h5 class="font-style1">junit</h5>
-                                    <h6 class="font-style1">유지보수<br>기본적인 사용법 숙지</h6>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- junit end -->
-
-                        <!-- log4j -->
-                        <div class="col-sm mt-4" id="log4j">
-                            <div class="row">
-                                <div class="div-style" id="log4jimg">
-                                    <img src="images/introduce/devtools/log4j.png">
-                                </div>
-                                <div class="col pt-2">
-                                    <h5 class="font-style1">log4j</h5>
-                                    <h6 class="font-style1">유지보수<br>기본 설정 가능</h6>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- log4j end -->
-                        
-                    </div>
-                    <!-- br -->
-                    <div class="row">
-                        <!-- git -->
-                        <div class="col-sm mt-4" id="git">
-                            <div class="row">
-                                <div class="div-style">
-                                    <img src="images/introduce/devtools/github.png" class="img-style-sm">
-                                </div>
-                                <div class="col pt-2">
-                                    <h5 class="font-style1">git</h5>
-                                    <h6 class="font-style1">형상관리<br>(merge, branch etc)</h6>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- git end -->
-
-                        <!-- gradle -->
-                        <div class="col-sm mt-4" id="gradle">
-                            <div class="row">
-                                <div class="div-style">
-                                    <img src="images/introduce/devtools/gradle.png" class="img-style-md">
-                                </div>
-                                <div class="col pt-2">
-                                    <h5 class="font-style1">gradle</h5>
-                                    <h6 class="font-style1">빌드 자동화<br>기본 설정 가능</h6>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- gradle end -->
-                    </div>
-                    <!-- br -->
-                    <div class="row">
-                        <!-- linux -->
-                        <div class="col-sm mt-4" id="linux">
-                            <div class="row">
-                                <div class="div-style">
-                                    <img src="images/introduce/devtools/linux.png" class="img-style-md">
-                                </div>
-                                <div class="col pt-2">
-                                    <h5 class="font-style1">linux</h5>
-                                    <h6 class="font-style1">기본 명령어 숙지<br>서버 활용 경험 있음</h6>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- linux end -->
-
-                        <!-- ubuntu -->
-                        <div class="col-sm mt-4" id="ubuntu">
-                            <div class="row">
-                                <div class="div-style">
-                                    <img src="images/introduce/devtools/ubuntu.svg" class="img-style-md">
-                                </div>
-                                <div class="col pt-2">
-                                    <h5 class="font-style1">ubuntu</h5>
-                                    <h6 class="font-style1">현재 사용중인<br>linux 기반 OS</h6>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- ubuntu end -->
-                    </div>
-                </div>
-                <!-- devtoolsinfo end -->
-            </div>
-            <!-- devtool end -->
-        </div>
-        <!-- skilltable end -->
-    </div>
-    <!-- skills&ability end -->
-    <hr>
-
+    <footer style="height: 300px; width: 100%; background-color: #f9f9f9; bottom: 0; left: 0; right: 0; position:fixed; box-sizing: border-box; z-index: 0;">
+        <p>Hello</p>
+        <p>Hello</p>
+        <p>Hello</p>
+        <p>Hello</p>
+        <p>Hello</p>
+        <p>Hello</p>
+        <p>Hello</p>
+    </footer>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/js/fontawesome.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </body>
 </html>

@@ -9,12 +9,6 @@ body {
     font-weight: lighter;
 }
 
-.font-style1m {
-    font-family: 'Noto Sans KR';
-    font-weight: bold;
-    font-size: 17px;
-}
-
 .font-style2 {
     font-family: 'Noto Sans KR';
     font-weight: lighter;
@@ -60,9 +54,6 @@ body {
     width: auto;
 }
 
-.img-style-lg {
-
-}
 /* ***************************************************** */
 /* div-style */
 .div-style {
@@ -91,6 +82,14 @@ body {
 .cabi-img {
     height: 40px;
     width: auto;
+}
+
+#cabinet1 p {
+    font-size: 2.4em;
+}
+
+#cabinet2 p {
+    font-size: 2.4em;
 }
 
 .circle {
@@ -170,9 +169,16 @@ body {
     height: 40px;
     width: auto;
 }
+
+#skillNability {
+    margin-bottom: 300px;
+    position: relative;
+    z-index: 1;
+    box-shadow: 0 10px 60px rgba(20,20,20,0.1), 0 10px 50px rgba(30,30,30,0.06);
+}
 /* *************************************************** */
 /* mobile */
-@media ( max-width: 480px ) {
+@media ( max-width: 768px ) {
     .circle {
         margin: 10px;
         height: 150px;
@@ -193,5 +199,18 @@ body {
     pre > .font-style2 {
         width: auto;
         overflow: unset;
+    }
+
+    #emptyset {
+        height:30px;
+        width: auto;
+    }
+
+    #cabinet1 p {
+        font-size: 1.3em;
+    }
+
+    #cabinet2 p {
+        font-size: 1.4em;
     }
 }
