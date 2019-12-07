@@ -171,7 +171,6 @@ body {
 }
 
 #skillNability {
-    margin-bottom: 300px;
     position: relative;
     z-index: 1;
     box-shadow: 0 10px 60px rgba(20,20,20,0.1), 0 10px 50px rgba(30,30,30,0.06);
@@ -196,11 +195,6 @@ body {
         font-size: 16px;
     }
 
-    pre > .font-style2 {
-        width: auto;
-        overflow: unset;
-    }
-
     #emptyset {
         height:30px;
         width: auto;
@@ -212,5 +206,9 @@ body {
 
     #cabinet2 p {
         font-size: 1.4em;
+    }
+
+    .font-style2 {
+        font-size: 14px;
     }
 }
