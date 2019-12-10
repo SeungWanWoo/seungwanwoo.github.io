@@ -7,7 +7,6 @@
     <title>PortPolio</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.7/fullpage.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:400,500,700,900|Noto+Sans:400,700&display=swap&subset=korean,latin-ext" rel="stylesheet">
     <link rel="stylesheet" href="indexv2.css">
@@ -16,36 +15,47 @@
 </head>
 
 <body>
-    <nav id="topmenu">
-        <ul id="menu">
-            <li data-menuanchor="#firstPage" class="btn active menulink"><a href="#firstPage"><i class="fas fa-home"></i> Home</a></li>
-            <li data-menuanchor="#secondPage" class="btn menulink"><a href="introduce.html"><i class="fas fa-info-circle"></i> About Me</a></li>
-            <li data-menuanchor="#thirdPage" class="btn menulink"><a href="#thirdPage"><i class="fab fa-github-alt"></i> Project</a></li>
-            <li data-menuanchor="#forthPage" class="btn menulink"><a href="#forthPage"><i class="fas fa-location-arrow"></i> Next..</a></li>
-        </ul>
+    <nav class="navbar navbar-expand-lg navbar-light" style="left:10%; height: 60px; width: 100%; position:fixed; background-color:#f8f8f8; z-index: 2;">
+        <a class="navbar-brand" href="#">Wany</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav" style="background-color: #f8f8f8;">
+            <li class="nav-item btn active">
+                <a class="nav-link" href="indexv2.html" style="font-size: 1.2em; height: 45px; width: 100%; background-color:#f8f8f8; z-index: 2;"><i class="fas fa-home"></i> Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item btn">
+                <a class="nav-link" href="introduce.html" style="font-size: 1.2em;height: 45px; width: 100%; background-color:#f8f8f8; z-index: 2;"><i class="fas fa-info-circle"></i> Introduce</a>
+            </li>
+            <li class="nav-item btn">
+                <a class="nav-link" href="#" style="font-size: 1.2em;height: 45px; width: 100%; background-color:#f8f8f8; z-index: 2;"><i class="fab fa-github-alt"></i> Project</a>
+            </li>
+            </ul>
+        </div>
     </nav>
     <div class="fluid-container">
         <div id="emptyset"></div>
-        <div class="fluid-container" style="height: 500px; width: auto; background-color:#29ce9c;">
-            <div class="row">
-                <div id="maindoordiv">
-                    <img src="images/index/maindoor-bg.png" style="height: 300px; width: auto;">
-                </div>
-                <div id="maindoordiv">
-                    <img src="images/index/18941.jpg" id="maindoorimg">
-                </div>
-            </div>
+        <div class="fluid-container" id="bg">
+            <p class="font-style1" style="position: absolute; top: 20%; left:10%;">반갑습니다<br></p>
+            <p class="font-style1-sm" style="position: absolute; top: 35%; left:10%;">사용자가 미소 짓게 만드는 개발자 우승완 입니다.</p>
+            <div class="typing-txt"> 
+                <ul>
+                    <li>항상 열려있는 마음의 개발자가 되는 것을 추구합니다.</li>
+                    <li>탐방하여 얻는 새로운 기술들을 좋아합니다.</li>
+                    <li>Spring Framework & jquery 등을 주로 사용하여 웹 개발을 합니다.</li>
+                </ul>
+            </div> 
+            <p class="typing font-style1-sm"></p> 
+            <img src="images/index/bg.png" style="height: 500px; width: 1920px;">
         </div>
     </div>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.7/vendors/easings.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.7/vendors/scrolloverflow.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.7/fullpage.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/js/fontawesome.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
-    <script src='index.js'></script>
+    <script src='indexv2.js'></script>
 </body>
 </html>

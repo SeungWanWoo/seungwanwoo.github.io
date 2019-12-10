@@ -180,6 +180,14 @@ body {
     z-index: 1;
     box-shadow: 0 10px 60px rgba(20,20,20,0.1), 0 10px 50px rgba(30,30,30,0.06);
 }
+
+.mv {
+    font-size: 1.4em;
+    line-height: 100%;
+}
+.mvintro {
+    font-size: 1.1em;
+}
 /* *************************************************** */
 /* mobile */
 @media ( max-width: 768px ) {
@@ -217,12 +225,21 @@ body {
         line-height: 160%;
     }
 
-    .img-style-main {
+    .img-style-main > img {
         height: 80px;
         width: auto;
     }
 
     #frontendintro {
         margin-bottom: 20px;
+    }
+
+    .mv {
+        font-size: 16pt !important;
+        line-height: 80%;
+    }
+
+    .mvintro {
+        font-size: 14pt !important;
     }
 }
