@@ -74,10 +74,7 @@ body {
     margin-top: 100px;
 }
 /* ***************************************************** */
-/* limitword */
-.limitword {
-    max-width: 200px;
-}
+
 /* ***************************************************** */
 /* cabinet */
 .cabi-img {
@@ -175,10 +172,8 @@ body {
     width: auto;
 }
 
-#skillNability {
-    position: relative;
-    z-index: 1;
-    box-shadow: 0 10px 60px rgba(20,20,20,0.1), 0 10px 50px rgba(30,30,30,0.06);
+#skillsNability > .font-style1 {
+    font-size: 2.4em !important;
 }
 
 .mv {
@@ -237,9 +232,68 @@ body {
     .mv {
         font-size: 16pt !important;
         line-height: 80%;
+        font-style: bold;
     }
 
     .mvintro {
         font-size: 14pt !important;
+    }
+
+    .img-style-sm, .img-style-md {
+        height: 80px;
+        width: auto;
+    }
+
+    #tomcatimg > img{
+        height: 70px;
+    }
+
+    .m-lineheight {
+        line-height: 80%;
+    }
+
+    #mysqlimg > img {
+        height: 80px;
+        width: auto;
+    }
+
+    #mariadbimg > img {
+        height: 60px;
+        width: auto;
+    }
+
+    #npmimg {
+        padding-top: 30px;
+    }
+    
+    #npmimg > img {
+        height: 25px;
+        width: auto;
+    }
+
+    #junitimg {
+        padding-top: 25px;
+    }
+    
+    #junitimg > img {
+        height: 25px;
+        width: auto;
+    }
+
+    #log4jimg {
+        padding-top: 20px;
+    }
+    
+    #log4jimg > img {
+        height: 35px;
+        width: auto;
+    }
+
+    .m-ml20 {
+        margin-left: 20px;
+    }
+
+    #backendintro {
+        margin-bottom: 30px;
     }
 }
