@@ -178,10 +178,11 @@ body {
 
 .mv {
     font-size: 1.4em;
-    line-height: 100%;
+    line-height: 90%;
 }
 .mvintro {
     font-size: 1.1em;
+    line-height: 80%;
 }
 /* *************************************************** */
 /* mobile */
@@ -231,7 +232,7 @@ body {
 
     .mv {
         font-size: 16pt !important;
-        line-height: 80%;
+        line-height: 90%;
         font-style: bold;
     }
 
