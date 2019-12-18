@@ -46,7 +46,7 @@ body {
 }
 
 .img-style-sm {
-    height: 130px;
+    height: 120px;
     width: auto;
 }
 
@@ -84,6 +84,10 @@ body {
 
 #cabinet1 .font-style1 {
     font-size: 2.4em;
+}
+
+#cabinet2 {
+    margin-bottom: 50px;
 }
 
 #cabinet2 .font-style1 {
@@ -146,7 +150,7 @@ body {
 }
 
 #npmimg {
-    padding-top: 50px;
+    padding-top: 35px;
 }
 
 #npmimg > img {
@@ -173,7 +177,7 @@ body {
 }
 
 #skillsNability > .font-style1 {
-    font-size: 2.4em !important;
+    font-size: 2.4em;
 }
 
 .mv {
@@ -183,6 +187,32 @@ body {
 .mvintro {
     font-size: 1.1em;
     line-height: 80%;
+}
+
+#frontendintro, #backendintro, #devtoolsintro {
+    margin-bottom: 50px;
+}
+
+.footercont {
+    margin-left: 20%;
+}
+
+/* *************************************************** */
+/* footer */
+#footerdoor {
+    font-family: 'Noto Sans KR'; font-weight: lighter; font-size: 2.4em; text-align: center;
+}
+
+#mymail, #mygit {
+    cursor: pointer;
+}
+
+#mymail > img, #mygit > img {
+    height: 100px; width: auto;
+}
+
+#mymail > p, #mygit > p {
+    margin-left: 20px; font-family: 'Noto Sans KR'; font-weight: lighter; font-size: 1.6em; line-height: 100px;
 }
 /* *************************************************** */
 /* mobile */
@@ -209,11 +239,11 @@ body {
     }
 
     #cabinet2 .font-style1 {
-        font-size: 1.6em;
+        font-size: 1.6em !important;
     }
 
-    #skillsNability .font-style1 {
-        font-size: 1.6em;
+    .font-style1h {
+        font-size: 1.6em !important;
     }
 
     .font-style2 {
@@ -296,5 +326,22 @@ body {
 
     #backendintro {
         margin-bottom: 30px;
+    }
+
+    #footerdoor {
+        font-size: 1.4em !important;
+    }
+
+    .footercont {
+        margin-left: 0% !important;
+    }
+
+    #mymail > img, #mygit > img {
+        height: 50px !important;
+    }
+
+    #mymail > p, #mygit > p {
+        font-size: 1.2em;
+        line-height: 50px;
     }
 }
