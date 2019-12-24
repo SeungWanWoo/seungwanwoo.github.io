@@ -134,44 +134,55 @@ body {
     background-color: #d6c4ec;
 }
 /* *************************************************** */
-#tomcatimg > img {
-    height: 90px;
+#jsimg {
+    height: 105px;
     width: auto;
 }
 
-#mysqlimg > img {
+.circleimg {
+    margin-top: 15px;
     height: 100px;
     width: auto;
 }
 
-#mariadbimg > img {
+#tomcatimg {
+    height: 90px;
+    width: auto;
+}
+
+#mysqlimg {
+    height: 100px;
+    width: auto;
+}
+
+#mariadbimg {
     height: 80px;
     width: auto;
 }
 
-#npmimg {
+#npmdiv {
     padding-top: 35px;
 }
 
-#npmimg > img {
+#npmimg {
     height: 30px;
     width: auto;
+}
+
+#junitdiv {
+    padding-top: 35px;
 }
 
 #junitimg {
-    padding-top: 35px;
-}
-
-#junitimg > img {
     height: 30px;
     width: auto;
 }
 
-#log4jimg {
+#log4jdiv {
     padding-top: 30px;
 }
 
-#log4jimg > img {
+#log4jimg {
     height: 40px;
     width: auto;
 }
@@ -213,6 +224,53 @@ body {
 
 #mymail > p, #mygit > p {
     margin-left: 20px; font-family: 'Noto Sans KR'; font-weight: lighter; font-size: 1.6em; line-height: 100px;
+}
+/* *************************************************** */
+/* turning effect */
+.thumbnailContainer {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+}
+
+.thumbnailContainer > img {
+    display: block;
+}
+
+.overlayRotate {
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    transform: rotate(90deg);
+    background: #1e1e1e;
+}
+
+.overlay {
+    position: absolute;
+    transition: all .3s ease;
+    opacity: 0;
+    background: black;
+}
+
+.text {
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2.0em;
+    border: 1px solid white;
+    padding: 50%;
+    border-radius: 5px;
+}
+
+.thumbnailContainer:hover .overlay {
+    opacity: .6;
+}
+
+.thumbnailContainer:hover .overlayRotate {
+    transform: rotate(0deg);
 }
 /* *************************************************** */
 /* mobile */
@@ -275,7 +333,18 @@ body {
         width: auto;
     }
 
-    #tomcatimg > img{
+    #jsimg {
+        height: 75px;
+        width: auto;
+    }
+
+    .circleimg {
+        margin-top: 25px;
+        height: 70px;
+        width: auto;
+    }
+
+    #tomcatimg{
         height: 70px;
     }
 
@@ -283,39 +352,39 @@ body {
         line-height: 80%;
     }
 
-    #mysqlimg > img {
+    #mysqlimg {
         height: 80px;
         width: auto;
     }
 
-    #mariadbimg > img {
+    #mariadbimg {
         height: 60px;
         width: auto;
     }
-
-    #npmimg {
+    
+    #npmdiv {
         padding-top: 30px;
     }
-    
-    #npmimg > img {
+
+    #npmimg {
         height: 25px;
         width: auto;
     }
 
-    #junitimg {
+    #junitdiv {
         padding-top: 25px;
     }
     
-    #junitimg > img {
+    #junitimg {
         height: 25px;
         width: auto;
     }
 
-    #log4jimg {
+    #log4jdiv {
         padding-top: 20px;
     }
     
-    #log4jimg > img {
+    #log4jimg {
         height: 35px;
         width: auto;
     }
@@ -337,7 +406,7 @@ body {
     }
 
     #mymail > img, #mygit > img {
-        height: 50px !important;
+        display: none;
     }
 
     #mymail > p, #mygit > p {
