@@ -414,3 +414,13 @@ body {
         line-height: 50px;
     }
 }
+
+@media ( max-width: 1024px) {
+    #mymail > img, #mygit > img {
+        display: none;
+    }
+    #mymail > p, #mygit > p {
+        font-size: 1.4em;
+        line-height: 50px;
+    }
+}
