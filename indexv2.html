@@ -6,16 +6,15 @@
     <meta charset='utf-8'>
     <title>PortPolio</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:400,500,700,900|Noto+Sans:400,700&display=swap&subset=korean,latin-ext" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="indexv2.css">
     <link rel="stylesheet" href="introduce.css">
-    <link rel="stylesheet" href="menu.css">
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light" style="left:10%; height: 60px; width: 100%; position:fixed; background-color:#f8f8f8; z-index: 2;">
+    <nav class="navbar navbar-expand-lg navbar-light" style="height: 60px; width: 100%; position:fixed; background-color:#f8f8f8; z-index: 2;">
         <a class="navbar-brand" href="#">Wany</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -49,6 +48,32 @@
             <p class="typing font-style1-sm"></p> 
             <img src="images/index/bg.png" style="height: 500px; width: 1920px;">
         </div>
+        <p class="font-style1" style="margin-top: 100px; text-align: center;" data-aos="flip-up">Skills</p>
+        <div class="fluid-container" id="skillicon" data-aos="flip-up" style="text-align: center;">
+            <div class="row" style="margin: 100px 0;">
+                <div class="col">
+                    <img src="images/index/front-end.svg" style="height: 100px; width: auto; margin-bottom: 15px;">
+                    <p class="font-style1-sm">front-end</p>
+                    <p class="font-style2">HTML/CSS, Javascript, jquery와</p>
+                    <p class="font-style2">handlebars와 같은 외부 라이브러리를 사용한</p>
+                    <p class="font-style2">웹 퍼블리싱</p>
+                </div>
+                <div class="col">
+                    <img src="images/index/backend.svg" style="height: 100px; width: auto; margin-bottom: 15px;">
+                    <p class="font-style1-sm">back-end</p>
+                    <p class="font-style2">Spring Framework, Apache Tomcat을 사용한</p>
+                    <p class="font-style2">웹 서버 개발</p>
+                    <p class="font-style2">Maria DB, Mybatis를 사용한 DB 설계</p>
+                </div>
+                <div class="col">
+                    <img src="images/index/coding.svg" style="height: 100px; width: auto; margin-bottom: 15px;">
+                    <p class="font-style1-sm">dev-tools</p>
+                    <p class="font-style2">linux를 사용한 서버 개발</p>
+                    <p class="font-style2">npm, cdn을 사용한 유지보수</p>
+                    <p class="font-style2">git, gradle을 사용한 형상관리</p>
+                </div>
+            </div>
+        </div>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
@@ -56,6 +81,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/js/fontawesome.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
-    <script src='indexv2.js'></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="indexv2.js"></script>
 </body>
 </html>

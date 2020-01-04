@@ -1,3 +1,7 @@
+$(document.body).ready(() => {
+  AOS.init();
+});
+
 var typingBool = false; 
 var typingIdx=0; 
 var liIndex = 0;
@@ -35,4 +39,4 @@ function typing(){
            tyInt = setInterval(typing,100);
          },1000);
     } 
-}  
+}
